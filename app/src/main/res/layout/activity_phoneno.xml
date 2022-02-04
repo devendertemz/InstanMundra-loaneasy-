@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/rlimage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+
+        <ImageView
+            android:id="@+id/ivbg"
+            android:layout_width="match_parent"
+            android:layout_height="320dp"
+            android:layout_alignParentTop="true"
+            android:scaleType="fitStart"
+            app:srcCompat="@drawable/phone_bg" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:layout_marginBottom="@dimen/dimen_30dp"
+            android:layout_marginLeft="@dimen/dimen_10dp"
+            app:srcCompat="@drawable/icon_phone" />
+
+
+        <customfonts.TextView_Roboto_regular
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="90dp"
+            android:gravity="center"
+            android:visibility="gone"
+            android:layout_gravity="bottom"
+            android:text="We are available only in Delhi/NCR !!"
+            android:textColor="@color/white"
+            android:textSize="@dimen/dimen_18sp"
+            android:textStyle="italic" />
+
+    </FrameLayout>
+
+    <customfonts.MyTextView_Roboto_Medium
+        android:id="@+id/tvVerifyTextRed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rlimage"
+        android:fontFamily="serif"
+        android:gravity="center"
+        android:text="Enter your phone number to login"
+        android:textColor="@color/gray_800"
+        android:textSize="18sp" />
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rlLocation"
+        android:visibility="gone"
+        android:layout_below="@+id/tvVerifyTextRed"
+        android:layout_marginLeft="@dimen/dimen_20dp"
+        android:layout_marginRight="@dimen/dimen_20dp"
+        android:layout_marginTop="@dimen/dimen_30dp"
+        android:padding="10dp"
+        android:background="#199f041b">
+
+
+        <ImageView
+            android:id="@+id/ivLoc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/placeholder_svg"
+            android:layout_centerVertical="true"
+            tools:ignore="VectorDrawableCompat" />
+
+        <androidx.appcompat.widget.AppCompatSpinner
+            android:id="@+id/spinnerLocation"
+            android:layout_toRightOf="@id/ivLoc"
+            android:layout_marginLeft="@dimen/dimen_15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/colorAccent" />
+
+    </RelativeLayout>
+
+
+    <customfonts.EditText_Roboto_Light
+        android:id="@+id/etPhoneNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rlLocation"
+        android:layout_marginLeft="@dimen/dimen_20dp"
+        android:layout_marginTop="@dimen/dimen_20dp"
+        android:layout_marginRight="@dimen/dimen_20dp"
+        android:layout_marginBottom="@dimen/dimen_30dp"
+        android:background="#199f041b"
+        android:drawableStart="@drawable/phone_svg"
+        android:drawablePadding="@dimen/dimen_10dp"
+        android:focusableInTouchMode="true"
+        android:hint="@string/enter_mobile_number"
+        android:inputType="number"
+        android:maxLength="10"
+        android:maxLines="1"
+        android:padding="10dp"
+        android:paddingTop="@dimen/dimen_10dp"
+        android:paddingBottom="@dimen/dimen_10dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/gray_500" />
+
+
+
+
+
+
+    <customfonts.MyTextView_Roboto_Medium
+        android:id="@+id/btPhoneNoSubmit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:background="@drawable/corner_button_background"
+        android:clickable="true"
+        android:foreground="?attr/selectableItemBackground"
+        android:gravity="center"
+        android:text="Submit"
+        android:textColor="@color/white"
+        android:textSize="@dimen/dimen_20sp" />
+
+
+</RelativeLayout>
+
+

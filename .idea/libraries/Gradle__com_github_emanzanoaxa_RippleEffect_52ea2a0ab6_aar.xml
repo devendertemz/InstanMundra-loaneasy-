@@ -1,0 +1,22 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.emanzanoaxa:RippleEffect:52ea2a0ab6@aar">
+    <ANNOTATIONS>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/288590e11b12dffe0e318345ba704f5a/jetified-RippleEffect-52ea2a0ab6/annotations.zip!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/08ab586ae718455cf53e30dd58178171/jetified-RippleEffect-52ea2a0ab6/annotations.zip!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/cf3547b63a4895533b75a4ebf3556f8e/jetified-RippleEffect-52ea2a0ab6/annotations.zip!/" />
+    </ANNOTATIONS>
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/288590e11b12dffe0e318345ba704f5a/jetified-RippleEffect-52ea2a0ab6/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/288590e11b12dffe0e318345ba704f5a/jetified-RippleEffect-52ea2a0ab6/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/288590e11b12dffe0e318345ba704f5a/jetified-RippleEffect-52ea2a0ab6/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/08ab586ae718455cf53e30dd58178171/jetified-RippleEffect-52ea2a0ab6/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/08ab586ae718455cf53e30dd58178171/jetified-RippleEffect-52ea2a0ab6/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/08ab586ae718455cf53e30dd58178171/jetified-RippleEffect-52ea2a0ab6/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/cf3547b63a4895533b75a4ebf3556f8e/jetified-RippleEffect-52ea2a0ab6/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/cf3547b63a4895533b75a4ebf3556f8e/jetified-RippleEffect-52ea2a0ab6/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/cf3547b63a4895533b75a4ebf3556f8e/jetified-RippleEffect-52ea2a0ab6/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

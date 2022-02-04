@@ -1,0 +1,19 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.d-max:spots-dialog:1.1@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/dcef57668b9ccd9c5de1477f2a59e21f/jetified-spots-dialog-1.1/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/dcef57668b9ccd9c5de1477f2a59e21f/jetified-spots-dialog-1.1/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/dcef57668b9ccd9c5de1477f2a59e21f/jetified-spots-dialog-1.1/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/d843c81243b5d9473b41412397daad87/jetified-spots-dialog-1.1/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/d843c81243b5d9473b41412397daad87/jetified-spots-dialog-1.1/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/d843c81243b5d9473b41412397daad87/jetified-spots-dialog-1.1/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/db3a7319b6f6456eee492028253402d6/jetified-spots-dialog-1.1/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/db3a7319b6f6456eee492028253402d6/jetified-spots-dialog-1.1/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/db3a7319b6f6456eee492028253402d6/jetified-spots-dialog-1.1/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.d-max/spots-dialog/1.1/476f06d8946834cb5fb74248bb14edca7b7fce0a/spots-dialog-1.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

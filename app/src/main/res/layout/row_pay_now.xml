@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:background="@android:color/background_light"
+    android:orientation="vertical"
+    app:cardCornerRadius="@dimen/dimen_2dp"
+    app:cardElevation="@dimen/dimen_2dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dimen_10dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_5dp"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <customfonts.MyTextView_Roboto_Medium
+                    android:id="@+id/LoanAmount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen_6dp"
+                    android:fontFamily="sans-serif"
+                    android:layout_centerVertical="true"
+                    android:gravity="left"
+                    android:maxLines="1"
+                    android:text="Loan amount : "
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/dimen_16sp" />
+
+                <ImageView
+                    android:id="@+id/rup"
+                    android:layout_width="@dimen/dimen_13dp"
+                    android:layout_height="@dimen/dimen_13dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/dimen_4dp"
+                    android:layout_marginLeft="@dimen/dimen_5dp"
+                    android:layout_toRightOf="@id/LoanAmount"
+                    app:srcCompat="@drawable/ic_rupee_gray" />
+
+                <customfonts.MyTextView_Roboto_Medium
+                    android:id="@+id/tvLoanAmount"
+                    android:layout_toRightOf="@id/rup"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="@dimen/dimen_6dp"
+                    android:fontFamily="sans-serif"
+                    android:maxLines="1"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/dimen_16sp" />
+
+                <ImageView
+                    android:id="@+id/ivStatusAppl"
+                    android:layout_width="@dimen/dimen_10dp"
+                    android:layout_height="@dimen/dimen_10dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/dimen_4dp"
+                    android:layout_toLeftOf="@id/tvStatusAppl"
+                    app:srcCompat="@drawable/ic_green_dot" />
+
+                <customfonts.TextView_Roboto_regularcondensed
+                    android:id="@+id/tvStatusAppl"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/dimen_6dp"
+                    android:layout_marginTop="@dimen/dimen_6dp"
+                    android:fontFamily="sans-serif"
+                    android:maxLines="1"
+                    android:text="Pending"
+                    android:textColor="@color/colorTex"
+                    android:textSize="@dimen/dimen_16sp" />
+            </RelativeLayout>
+
+            <customfonts.TextView_Roboto_regularcondensed
+                android:id="@+id/tvDueDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="@dimen/dimen_7dp"
+                android:fontFamily="sans-serif"
+                android:text="--"
+                android:textColor="@color/intro_text2"
+                android:textSize="@dimen/dimen_16sp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_5dp"
+                android:orientation="horizontal">
+
+                <customfonts.TextView_Roboto_light_condensed
+                    android:id="@+id/tvRepayDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="5dp"
+                    android:fontFamily="sans-serif"
+                    android:text="--"
+                    android:textColor="@color/gray_800"
+                    android:textSize="@dimen/dimen_16sp" />
+
+                <customfonts.TextView_Roboto_light
+                    android:id="@+id/tvView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:background="@color/colorPrimary"
+                    android:paddingLeft="@dimen/dimen_10dp"
+                    android:paddingRight="@dimen/dimen_10dp"
+                    android:paddingTop="@dimen/dimen_5dp"
+                    android:paddingBottom="@dimen/dimen_5dp"
+                    android:layout_marginRight="15dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:fontFamily="sans-serif"
+                    android:text="View"
+                    android:textColor="@color/white"
+                    android:textSize="16sp" />
+
+
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

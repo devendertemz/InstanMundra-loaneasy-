@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/close"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_alignParentRight="true"
+        android:layout_gravity="right"
+
+        android:src="@drawable/ic_close_foreground" />
+
+
+    <ImageView
+        android:id="@+id/imageview"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/pay" />
+
+    <TextView
+        android:id="@+id/tvChoosePaymentMethodLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageview"
+        android:layout_centerInParent="true"
+        android:layout_margin="@dimen/dimen_10dp"
+        android:layout_marginLeft="@dimen/dimen_15dp"
+        android:paddingStart="@dimen/dimen_10dp"
+        android:paddingLeft="@dimen/dimen_10dp"
+        android:text="Payment Options"
+        android:textColor="@color/black"
+        android:textSize="@dimen/dimen_20dp" />
+
+    <TextView
+        android:id="@+id/Razorpay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvChoosePaymentMethodLogin"
+        android:layout_gravity="center"
+        android:layout_marginLeft="@dimen/dimen_20dp"
+        android:layout_marginTop="@dimen/dimen_15dp"
+        android:background="@drawable/corner_button_background"
+
+        android:layout_marginRight="20dp"
+
+        android:gravity="center"
+        android:padding="@dimen/dimen_10dp"
+        android:text="Razorpay"
+        android:textColor="@color/white"
+        android:textSize="@dimen/dimen_18dp"
+        android:textStyle="bold" />
+
+
+    <TextView
+        android:id="@+id/ICICI"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Razorpay"
+        android:layout_gravity="center"
+        android:layout_marginLeft="@dimen/dimen_20dp"
+        android:layout_marginBottom="@dimen/dimen_60dp"
+        android:background="@drawable/corner_button_background"
+
+        android:layout_marginTop="@dimen/dimen_15dp"
+        android:layout_marginRight="20dp"
+
+        android:gravity="center"
+        android:padding="@dimen/dimen_10dp"
+        android:text="ICICI  Gateway"
+        android:textColor="@color/white"
+        android:textSize="@dimen/dimen_18dp"
+        android:textStyle="bold" />
+</RelativeLayout>

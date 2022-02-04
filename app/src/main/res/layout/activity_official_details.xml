@@ -1,0 +1,795 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:weightSum="7">
+
+    <ImageView
+        android:id="@+id/ivbg"
+        android:layout_width="match_parent"
+        android:layout_height="320dp"
+        android:layout_alignParentTop="true"
+        android:scaleType="fitStart"
+        app:srcCompat="@drawable/phone_bg" />
+
+    <customfonts.TextView_Roboto_regular
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dimen_30dp"
+        android:layout_marginTop="@dimen/dimen_20dp"
+        android:layout_marginRight="15dp"
+        android:layout_weight="1"
+        android:text="Official details"
+        android:textColor="@color/white"
+        android:textSize="@dimen/dimen_20sp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btSubmitUserInfo"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="@dimen/dimen_65dp"
+        android:layout_marginRight="15dp"
+        android:elevation="@dimen/dimen_4dp"
+        android:scrollbars="none">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/dimen_5dp"
+            app:cardCornerRadius="@dimen/dimen_10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <customfonts.TextView_Roboto_light
+                    android:id="@+id/tvNameWlcm"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/dimen_15dp"
+                    android:fontFamily="serif"
+                    android:gravity="center"
+                    android:text="Please update the employment details below"
+                    android:textColor="@color/gray_700"
+                    android:textSize="@dimen/dimen_16sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen_10dp"
+                    android:layout_marginLeft="@dimen/dimen_5dp"
+                    android:layout_marginRight="@dimen/dimen_5dp"
+                    android:elevation="@dimen/dimen_4dp"
+                    android:orientation="vertical">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/input_layout_CompanyName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="10dp"
+                        android:theme="@style/TextLabel">
+
+                        <EditText
+                            android:id="@+id/etCompanyName"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:drawableStart="@drawable/icon_organization_25"
+                            android:drawableLeft="@drawable/icon_organization_25"
+                            android:drawablePadding="@dimen/dimen_5dp"
+                            android:focusable="true"
+                            android:textSize="@dimen/dimen_17sp"
+                            android:focusableInTouchMode="true"
+                            android:hint="Organization Name"
+                            android:inputType="textCapCharacters"
+                            android:maxLines="1"
+                            android:paddingLeft="5dp"
+                            android:paddingTop="10dp"
+                            android:paddingRight="10dp"
+                            android:paddingBottom="12dp"
+                            android:textColor="@color/black"
+                            android:theme="@style/ThemeEditText3" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <!-- <View
+                         android:layout_width="match_parent"
+                         android:layout_height="1dp"
+                         android:layout_marginLeft="@dimen/dimen_12dp"
+                         android:layout_marginRight="@dimen/dimen_12dp"
+                         android:background="@color/colorPrimary" />-->
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/input_layout_CompanyAddress"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="10dp"
+                        android:theme="@style/TextLabel">
+
+                        <EditText
+                            android:id="@+id/etCompanyAddress"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:drawableStart="@drawable/icon_company_address_25"
+                            android:drawableLeft="@drawable/icon_company_address_25"
+                            android:drawablePadding="@dimen/dimen_5dp"
+                            android:focusable="true"
+                            android:textSize="@dimen/dimen_17sp"
+                            android:focusableInTouchMode="true"
+                            android:hint="Organization Address"
+                            android:inputType="textCapCharacters"
+                            android:paddingLeft="5dp"
+                            android:paddingTop="10dp"
+                            android:paddingRight="10dp"
+                            android:paddingBottom="12dp"
+                            android:textColor="@color/black"
+                            android:theme="@style/ThemeEditText3" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <!--<View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginLeft="@dimen/dimen_12dp"
+                        android:layout_marginRight="@dimen/dimen_12dp"
+                        android:background="@color/colorPrimary" />-->
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dimen_15dp"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <customfonts.TextView_Roboto_regularcondensed
+                            android:id="@+id/tvEmpTypeText"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="7dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_weight="1"
+                            android:text="Employment Type"
+                            android:textColor="@color/carmine"
+                            android:textSize="17sp" />
+
+                        <customfonts.TextView_Roboto_regularcondensed
+                            android:id="@+id/tvWorkingYearsText"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="bottom"
+                            android:text="Working years"
+                            android:textColor="@color/carmine"
+                            android:textSize="17sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="5dp"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <FrameLayout
+                            android:layout_width="@dimen/dimen_60dp"
+                            android:layout_height="@dimen/dimen_30dp"
+                            android:layout_marginRight="@dimen/dimen_10dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/rectangle">
+
+                            <androidx.appcompat.widget.AppCompatSpinner
+                                android:id="@+id/spEmpType"
+                                style="@style/spinner_style"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:dropDownVerticalOffset="50dp"
+                                android:spinnerMode="dropdown"
+                                android:theme="@style/ThemeSpinner"
+                                app:backgroundTint="@color/carmine" />
+                        </FrameLayout>
+
+                        <!--<android.support.v7.widget.AppCompatSpinner
+                            android:id="@+id/spSalary"
+                            style="@style/Base.Widget.AppCompat.Spinner.Underlined"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_weight="1"
+                            android:dropDownVerticalOffset="50dp"
+                            android:spinnerMode="dropdown"
+                            app:backgroundTint="@color/gray_light" />-->
+
+                        <FrameLayout
+                            android:layout_width="@dimen/dimen_60dp"
+                            android:layout_height="@dimen/dimen_30dp"
+                            android:layout_marginRight="@dimen/dimen_10dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/rectangle">
+
+                            <androidx.appcompat.widget.AppCompatSpinner
+                                android:id="@+id/spWorkingYearOrg"
+                                style="@style/spinner_style"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="10dp"
+                                android:layout_weight="1"
+                                android:dropDownVerticalOffset="50dp"
+                                android:spinnerMode="dropdown"
+                                android:theme="@style/ThemeSpinner"
+                                app:backgroundTint="@color/carmine" />
+                        </FrameLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dimen_15dp"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <customfonts.TextView_Roboto_regularcondensed
+                            android:id="@+id/tvSalaryModeText"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="@dimen/dimen_6dp"
+                            android:layout_weight="1"
+                            android:gravity="bottom"
+                            android:text="Mode of salary"
+                            android:textColor="@color/carmine"
+                            android:textSize="17sp" />
+
+                        <customfonts.TextView_Roboto_regularcondensed
+                            android:id="@+id/tvTakeHomeSalaryText"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_weight="1"
+                            android:text="Take Home Salary"
+                            android:textColor="@color/carmine"
+                            android:textSize="17sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="5dp"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <FrameLayout
+                            android:layout_width="@dimen/dimen_60dp"
+                            android:layout_height="@dimen/dimen_40dp"
+                            android:layout_marginRight="@dimen/dimen_10dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/rectangle">
+
+                            <androidx.appcompat.widget.AppCompatSpinner
+                                android:id="@+id/spSalaryMode"
+                                style="@style/spinner_style"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="10dp"
+                                android:layout_weight="1"
+                                android:dropDownVerticalOffset="50dp"
+                                android:spinnerMode="dropdown"
+                                android:theme="@style/ThemeSpinner"
+                                app:backgroundTint="@color/carmine">
+
+                            </androidx.appcompat.widget.AppCompatSpinner>
+                        </FrameLayout>
+
+                        <FrameLayout
+                            android:layout_width="@dimen/dimen_60dp"
+                            android:layout_height="@dimen/dimen_40dp"
+                            android:layout_marginRight="@dimen/dimen_10dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/rectangle">
+
+                            <EditText
+                                android:id="@+id/etTakeHomeSalary"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:theme="@style/ThemeEditText2"
+                                android:layout_marginTop="@dimen/dimen_3dp"
+                                android:layout_marginRight="10dp"
+                                android:hint="salary"
+                                android:inputType="number"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/dimen_15sp"
+                                android:textCursorDrawable="@drawable/color_cursor"
+                                />
+                        </FrameLayout>
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dimen_15dp"
+                        android:orientation="vertical"
+                        android:weightSum="2">
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/input_layout_HrPhone"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginRight="10dp"
+                            android:theme="@style/TextLabel">
+
+                            <EditText
+                                android:id="@+id/etHrPhoneNumber"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:drawablePadding="@dimen/dimen_5dp"
+                                android:focusable="true"
+                                android:focusableInTouchMode="true"
+                                android:inputType="number"
+                                android:maxLength="10"
+                                android:textSize="@dimen/dimen_17sp"
+                                android:hint="Please enter your Company HR number"
+                                android:maxLines="1"
+                                android:paddingLeft="5dp"
+                                android:paddingTop="10dp"
+                                android:paddingRight="10dp"
+                                android:paddingBottom="12dp"
+                                android:textColor="@color/black"
+                                android:textColorHighlight="@color/white"
+                                android:theme="@style/ThemeEditText" />
+                        </com.google.android.material.textfield.TextInputLayout>
+
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/input_layout_HrEmail"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginRight="10dp"
+                            android:theme="@style/TextLabel">
+
+                            <EditText
+                                android:id="@+id/etHrEmail"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:drawablePadding="@dimen/dimen_5dp"
+                                android:focusable="true"
+                                android:focusableInTouchMode="true"
+                                android:inputType="textEmailAddress"
+                                android:maxLength="50"
+                                android:textSize="@dimen/dimen_17sp"
+                                android:hint="Please enter your company email"
+                                android:maxLines="1"
+                                android:paddingLeft="5dp"
+                                android:paddingTop="10dp"
+                                android:paddingRight="10dp"
+                                android:paddingBottom="12dp"
+                                android:textColor="@color/black"
+                                android:textColorHighlight="@color/white"
+                                android:theme="@style/ThemeEditText" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen_10dp"
+                    android:layout_marginLeft="@dimen/dimen_5dp"
+                    android:layout_marginRight="@dimen/dimen_5dp"
+                    android:elevation="@dimen/dimen_4dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dimen_15dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="@dimen/dimen_12dp"
+                            android:background="@drawable/pan_card_svg" />
+
+                        <customfonts.TextView_Roboto_regularcondensed
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="@dimen/dimen_10dp"
+                            android:fontFamily="sans-serif-condensed"
+                            android:text="Upload Your Employer ID Card"
+                            android:textColor="@color/carmine"
+                            android:textSize="@dimen/dimen_17sp"
+                            android:textStyle="bold" />
+
+
+                    </LinearLayout>
+
+                    <ImageView
+                        android:id="@+id/ivEmpID"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="@dimen/dimen_75dp"
+                        android:layout_marginTop="@dimen/dimen_10dp"
+                        android:layout_marginBottom="@dimen/dimen_15dp"
+                        android:background="@color/gray_50"
+                        android:clickable="true"
+                        android:elevation="@dimen/dimen_4dp"
+                        android:foreground="?attr/selectableItemBackground"
+                        android:padding="@dimen/dimen_5dp"
+                        android:scaleType="fitXY"
+                        app:srcCompat="@drawable/camera_svg" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:elevation="@dimen/dimen_4dp"
+                    android:layout_marginTop="@dimen/dimen_10dp"
+                    android:orientation="vertical">
+
+
+                    <customfonts.TextView_Roboto_regularcondensed
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/dimen_17sp"
+                        android:layout_marginLeft="@dimen/dimen_12dp"
+                        android:textStyle="bold"
+                        android:layout_marginTop="@dimen/dimen_2dp"
+                        android:textColor="@color/carmine"
+                        android:text="Please select document for address proof"/>
+
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dimen_40dp"
+                        android:layout_marginLeft="@dimen/dimen_10dp"
+                        android:layout_marginTop="@dimen/dimen_10dp"
+                        android:background="@drawable/rectangle">
+
+                        <androidx.appcompat.widget.AppCompatSpinner
+                            android:id="@+id/spAddressProof"
+                            style="@style/spinner_style"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp"
+                            android:dropDownVerticalOffset="50dp"
+                            android:spinnerMode="dropdown"
+                            android:theme="@style/ThemeSpinner"
+                            app:backgroundTint="@color/carmine">
+
+                        </androidx.appcompat.widget.AppCompatSpinner>
+
+                    </FrameLayout>
+
+
+
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/input_layout_Aadhar"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="10dp"
+                        android:theme="@style/TextLabel">
+
+                        <customfonts.EditText_Roboto_Light
+                            android:id="@+id/etAadharCard"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:drawablePadding="@dimen/dimen_5dp"
+                            android:focusable="true"
+                            android:focusableInTouchMode="true"
+                            android:inputType="textCapCharacters"
+                            android:maxLength="20"
+                            android:maxLines="1"
+                            android:textSize="@dimen/dimen_17sp"
+                            android:paddingLeft="5dp"
+                            android:paddingTop="10dp"
+                            android:paddingRight="10dp"
+                            android:paddingBottom="12dp"
+                            android:textColor="@color/black"
+                            android:textColorHighlight="@color/gray_600"
+                            android:theme="@style/ThemeEditText" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <!--<View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginLeft="@dimen/dimen_12dp"
+                        android:layout_marginRight="@dimen/dimen_12dp"
+                        android:background="@color/colorPrimary" />-->
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dimen_15dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/dimen_12dp"
+                            android:background="@drawable/id_card_svg"/>
+
+                        <customfonts.TextView_Roboto_regularcondensed
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="@dimen/dimen_10dp"
+                            android:id="@+id/tvAddressType"
+                            android:fontFamily="sans-serif-condensed"
+                            android:textColor="@color/carmine"
+                            android:textSize="@dimen/dimen_17sp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dimen_10dp"
+                        android:layout_marginBottom="@dimen/dimen_15dp"
+                        >
+
+                        <LinearLayout
+                            android:id="@+id/ly1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/dimen_70dp"
+                            android:orientation="vertical">
+
+                            <customfonts.TextView_Roboto_light
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:textColor="@color/carmine"
+                                android:text="Front"/>
+
+                            <ImageView
+                                android:id="@+id/ivAdharFront"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:layout_marginLeft="@dimen/dimen_15dp"
+                                android:layout_marginTop="@dimen/dimen_10dp"
+                                android:layout_marginBottom="@dimen/dimen_15dp"
+                                android:background="@color/gray_50"
+                                android:clickable="true"
+                                android:elevation="@dimen/dimen_4dp"
+                                android:foreground="?attr/selectableItemBackground"
+                                android:padding="@dimen/dimen_5dp"
+                                android:scaleType="fitXY"
+                                app:srcCompat="@drawable/camera_svg"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_toRightOf="@id/ly1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/dimen_30dp"
+                            android:layout_marginRight="@dimen/dimen_10dp"
+                            android:orientation="vertical">
+
+                            <customfonts.TextView_Roboto_light
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:textColor="@color/carmine"
+                                android:text="Back"/>
+
+                            <ImageView
+                                android:id="@+id/ivAdharBack"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:layout_marginTop="@dimen/dimen_10dp"
+                                android:layout_marginBottom="@dimen/dimen_15dp"
+                                android:background="@color/gray_50"
+                                android:clickable="true"
+                                android:elevation="@dimen/dimen_4dp"
+                                android:foreground="?attr/selectableItemBackground"
+                                android:padding="@dimen/dimen_5dp"
+                                android:scaleType="fitXY"
+                                app:srcCompat="@drawable/camera_svg"
+                                tools:ignore="VectorDrawableCompat" />
+
+                        </LinearLayout>
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen_10dp"
+                    android:layout_marginLeft="@dimen/dimen_5dp"
+                    android:layout_marginRight="@dimen/dimen_5dp"
+                    android:elevation="@dimen/dimen_4dp"
+                    android:orientation="vertical">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/input_layout_Pancard"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="10dp"
+                        android:theme="@style/TextLabel">
+
+                        <customfonts.EditText_Roboto_Light
+                            android:id="@+id/etPanCard"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:drawablePadding="@dimen/dimen_5dp"
+                            android:focusable="true"
+                            android:focusableInTouchMode="true"
+                            android:inputType="textCapCharacters"
+                            android:maxLength="10"
+                            android:textSize="@dimen/dimen_17sp"
+                            android:hint="Enter Pan Card No"
+                            android:maxLines="1"
+                            android:paddingLeft="5dp"
+                            android:paddingTop="10dp"
+                            android:paddingRight="10dp"
+                            android:paddingBottom="12dp"
+                            android:textColor="@color/black"
+                            android:textColorHighlight="@color/white"
+                            android:theme="@style/ThemeEditText" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <!-- <View
+                         android:layout_width="match_parent"
+                         android:layout_height="1dp"
+                         android:layout_marginLeft="@dimen/dimen_12dp"
+                         android:layout_marginRight="@dimen/dimen_12dp"
+                         android:background="@color/colorPrimary" />-->
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dimen_15dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/dimen_12dp"
+                            android:background="@drawable/pan_card_svg" />
+
+                        <customfonts.TextView_Roboto_regularcondensed
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="@dimen/dimen_10dp"
+                            android:fontFamily="sans-serif-condensed"
+                            android:text="Upload Your Pan Card"
+                            android:textColor="@color/carmine"
+                            android:textSize="@dimen/dimen_17sp"
+                            android:textStyle="bold" />
+
+
+                    </LinearLayout>
+
+                    <ImageView
+                        android:id="@+id/ivPan"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="@dimen/dimen_75dp"
+                        android:layout_marginTop="@dimen/dimen_10dp"
+                        android:layout_marginBottom="@dimen/dimen_15dp"
+                        android:background="@color/gray_50"
+                        android:clickable="true"
+                        android:elevation="@dimen/dimen_4dp"
+                        android:foreground="?attr/selectableItemBackground"
+                        android:padding="@dimen/dimen_5dp"
+                        android:scaleType="fitXY"
+                        app:srcCompat="@drawable/camera_svg" />
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_30dp"
+                    android:layout_marginTop="@dimen/dimen_10dp"
+                    android:background="@color/white"
+                    android:layout_marginRight="@dimen/dimen_10dp"
+                    android:layout_marginLeft="@dimen/dimen_10dp"
+                    android:orientation="vertical">
+
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_1dp"
+                    android:layout_marginRight="@dimen/dimen_5dp"
+                    android:layout_marginLeft="@dimen/dimen_5dp"
+                    android:background="@color/gray_300" />
+
+                <androidx.appcompat.widget.AppCompatCheckBox
+                    android:id="@+id/cbTermsCondition"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="@dimen/dimen_15dp"
+                    android:layout_marginBottom="10dp"
+                    android:text="@string/terms_amp_conditions"
+                    android:textSize="17sp" />
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </ScrollView>
+
+    <customfonts.MyTextView_Roboto_Medium
+        android:id="@+id/btSubmitUserInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:background="@drawable/corner_button_background"
+        android:clickable="true"
+        android:foreground="?attr/selectableItemBackground"
+        android:gravity="center"
+        android:text="Submit"
+        android:textColor="@color/white"
+        android:textSize="@dimen/dimen_20sp" />
+
+</RelativeLayout>
+
+

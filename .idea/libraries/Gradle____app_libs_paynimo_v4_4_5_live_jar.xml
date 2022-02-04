@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="Gradle: ./app/libs/paynimo_v4.4.5_live.jar">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/app/libs/paynimo_v4.4.5_live.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".OpenFrontCamera">
+
+    <ImageView
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginRight="10dp"
+        app:srcCompat="@drawable/photo_camera_svg"
+        android:id="@+id/imageView1"/>
+
+    <Button
+        android:id="@+id/btOpenCamera"
+        android:layout_below="@id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_20dp"
+        android:layout_centerHorizontal="true"
+        android:text="Take a selfie"
+        android:background="@drawable/corner_button_background"
+        android:foreground="?attr/selectableItemBackground"
+        android:clickable="true"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="@dimen/dimen_17sp"/>
+
+    <customfonts.TextView_Roboto_light_condensed
+        android:layout_below="@id/tv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_10dp"
+        android:layout_centerHorizontal="true"
+        android:text="We need you picture for identification purpose"
+        tools:ignore="NotSibling" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:weightSum="2"
+        >
+        <!--<Button
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="@dimen/dimen_10dp"
+            android:layout_marginRight="@dimen/dimen_10dp"
+            android:layout_weight="1"
+            android:layout_marginTop="10dp"
+
+
+            />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="@dimen/dimen_10dp"
+            android:layout_marginRight="@dimen/dimen_10dp"
+
+            android:layout_marginTop="10dp"
+
+
+            />-->
+
+
+        <Button
+            android:id="@+id/btProceed"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:text="Proceed"
+            android:background="@drawable/corner_button_background"
+            android:foreground="?attr/selectableItemBackground"
+            android:clickable="true"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:textSize="17sp"
+            android:focusable="true" />
+    </LinearLayout>
+
+</RelativeLayout>

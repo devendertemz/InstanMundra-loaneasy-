@@ -1,0 +1,365 @@
+<resources>
+    <string name="app_name">Instant Mudra</string>
+
+    <string name="sendotp_key">256032ACgwQJWWBewM5c3723a1</string>
+
+    <string name="default_notification_channel_id" translatable="false">fcm_default_channel</string>
+    <string name="youAreNotUpdatedMessage">A new version of Instant Mudra is available. Please update your application.</string>
+    <string name="youAreNotUpdatedMessage1">&#160;now</string>
+    <string name="update">Update</string>
+    <string name="youAreNotUpdatedTitle">Update Available</string>
+
+    <!--Social media credentials -->
+    <!--<string name="facebook_app_id">337101683502098</string>
+    <string name="fb_login_protocol_scheme">fb337101683502098</string>-->
+
+
+    <string name="facebook_app_id">510434699713745</string>
+    <string name="fb_login_protocol_scheme">fb510434699713745</string>
+
+    <string name="ACCOUNT_KIT_CLIENT_TOKEN">[ACCOUNT_KIT_CLIENT_TOKEN]</string>
+
+    <string name="twitter_consumer_key">ufGg2ofQPuS16EhP9O7zOrI1n</string>
+    <string name="twitter_consumer_secret">ivaKvMRjqqeSVVf3SV5X94D1nep2gFXj6irTOTvAYCA3H5qXHC</string>
+    <!-- Main Activity-->
+    <string name="tv_enterPhoneNo">Enter Phone No</string>
+    <string name="bt_submitPhoneNo">Submit</string>
+    <string name="bt_apply">Apply for loan</string>
+
+    <!--VerifyOtp Activity-->
+    <string name="tv_VerifyOtpText">Enter OTP to verify your phone number</string>
+    <string name="bt_SubmitOtp">Submit</string>
+
+    <string name="edittext_hint"><font size="25">Mobile Number</font></string>
+
+    <string name="customer_care"> <i>SKIP</i>.</string>
+
+
+    <string name="next">NEXT</string>
+
+
+    <string name="skip"> <u>SKIP</u>.</string>
+    <string name="start">GOT IT</string>
+    <string name="email_not_valid">Email address is not valid</string>
+    <string name="pancard_not_valid">Pan card number is not valid</string>
+
+    <string name="err_msg_fname">Enter your First name</string>
+    <string name="err_msg_lname">Enter your Last name</string>
+    <string name="err_msg_email">Enter your official Email</string>
+
+
+    <string name="hint_fName"><![CDATA[First Name <font color=\'#cc0029\'>*</font>]]></string>
+    <string name="hint_lName"><![CDATA[First Name <font color=\'#cc0029\'>*</font>]]></string>
+    <string name="hint_email"><![CDATA[Official Email <font color=\'#cc0029\'>*</font>]]></string>
+
+    <string name="skip_profile"><u>SKIP</u></string>
+
+    <string name="slide_1_title">LESS INTEREST RATE</string>
+    <string name="slide_1_desc">Less interest to repay the loan !</string>
+
+    <string name="slide_2_title">GREAT DISCOUNTS</string>
+    <string name="slide_2_desc">Best discounts on every single service we offer !</string>
+
+    <string name="slide_3_title">EASIEST WAY TO GET LOAN</string>
+    <string name="slide_3_desc">Very easy to get loan with just few clicks !</string>
+
+    <string name="slide_4_title">INSTANT LOAN</string>
+    <string name="slide_4_desc">The easiest way to get a loan from your phone with very basic formality </string>
+
+    <string name="play_again_desc">To see the welcome slider again, goto Settings -> apps -> welcome slider -> clear data</string>
+    <string name="play_again">Play Again</string>
+
+
+    <!-- HomeActivity Navigation drawer items -->
+    <string name="drawer_open">Open</string>
+    <string name="drawer_close">Close</string>
+    <string name="title_activity_online_payment">Loan Easy</string>
+    <string name="upload_bank_statement">Attach latest 6 month bank statement\n ( pdf Only )</string>
+    <string name="upload_salary_slip1">Attach salary slip1</string>
+    <string name="upload_salary_slip2">Attach salary slip2</string>
+    <string name="upload_salary_slip3">Attach salary slip3</string>
+    <string name="terms_amp_conditions"><![CDATA[I accept terms & conditions !]]></string>
+    <string name="verify_number">Verify number</string>
+    <string name="verify_email">Verify email</string>
+    <string name="enter_mobile_number">Enter Mobile Number</string>
+    <string name="employment_details">Employment Details</string>
+    <string name="enter_aadhar">Enter Aadhar Card No</string>
+
+    <string name="slip_1">Salary slip 1\n (pdf Only)</string>
+    <string name="slip_2">Salary slip 2\n (pdf Only)</string>
+    <string name="slip_3">Salary slip 3\n (pdf Only)</string>
+
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="my_account">MY PROFILE</string>
+    <string name="act_loans">ACTIVE LOANS</string>
+    <string name="app_loans">APPLIED LOANS</string>
+    <string name="docs_req">DOCUMENTS REQUIRED</string>
+    <string name="about_us">ABOUT US</string>
+    <string name="terms">TERMS &amp; CONDITIONS</string>
+    <string name="faq">FAQ</string>
+    <string name="contact_us">CONTACT US</string>
+    <string name="log_out">LOG OUT</string>
+    <string name="loan_not_allowed">Please try after clearing the current loan.</string>
+
+
+    <string name="about_1">Instant mudra is a subsidiary of Chintamani finlease ltd.</string>
+    <string name="about_2">Chintamani Finlease is an RBI registered non banking financial company (NBFC) operating for last 21+ years from Delhi. Our endeavor has always been to become an easy to access and reliable credit provider to various sections of the society in Delhi NCR. Since our inception year 1995, we continuously thrive towards becoming reputed NBFC through ensuring highest quality delivery and customer relations. Instant Mudra. came into existence when Late Mr. Puran Chand Jain (Ex-banker) saw a dream to create a financing firm which can provide easy and fast credit facilities to all sections of the society at the same time creating trusted relationships with its customers. Instant mudra is your friend and partner, who extend their helping hand towards you to make your dreams come true on your required time. It is a firm managed by professional and skilled manpower under the leadership of Mr. Pradeep Kumar Jain, MBA CAIIB. He is an Ex banker with 25 years of rich experience in Nationalized banks.</string>
+    <string name="about_3">We as a company belief in transparency and help customers about the credit policy, CIBIL etc. and help them to manage their finances properly. CIBIL score is very important for anybody now days, but only few people understand. CIBIL score not only affect your ability to get favourable loans &amp; the best interest rates, but it also helps you in getting new approved for a new cell phone plan and help you get lesser insurance premiums.</string>
+
+    <string name="tc_1">Instant Mudra., has their registered office at G-73, 2nd Floor, Main vikas marg Laxmi Nagar, Near walia nursing home, Delhi-110092, and is the owner of the website, www.instantmudra.com &amp; Android app InstantMudra. As a user (“User”) of this Site, the User understands that Instant Mudra. is an online platform providing access between multiple Users in the form of lenders, borrowers, service providers etc. with a view to facilitate lending and borrowing activities between the Users. </string>
+    <string name="tc_2">Your use of this Android App implies that you have read, understood and agreed to abide by following, disclaimer, terms &amp; conditions. These Terms &amp; Conditions together with our privacy policy as provided on the Website govern your usage of the Website. If you disagree with any part of these terms and conditions, please do not use the our android app.  </string>
+
+    <string name="policy1">1.  No charges, If the applicant request for cancellation of the sanction before disbursement of the loan.</string>
+    <string name="policy2">2.  After disbursement of loan processing charges will not be refund.</string>
+    <string name="policy3">3.  Pre-payment charges @4 % will be charged on the outstanding principle amount.</string>
+    <string name="policy4">4.  After disbursement, full amount of the EMI will be taken as principle amount and future interest will be reduced from the principle amount for closing of the loan amount.</string>
+    <string name="tc_h1">General</string>
+    <string name="tc_h2">Eligibility</string>
+    <string name="tc_h3">Acceptance of Terms and Conditions</string>
+    <string name="tc_h4">Your Account</string>
+    <string name="tc_h5">Limitation of Liability</string>
+    <string name="tc_h6">Indemnity</string>
+    <string name="tc_h7">Applicable Laws</string>
+
+    <string name="tc_c1">The App is an online platform bringing together borrowers and lenders willing to abide by the Terms &amp; Conditions herein. Instant Mudra. is merely a facilitator providing an online platform for borrowers in need of loans from lenders and lenders willing to disburse loans to borrowers. Instant Mudra. merely facilitates a transaction of borrowing and lending between two such persons. Instant Mudra. is not a Financial Institution under the Companies Act, 2013 or the Banking Regulation Act, 1949 or any other laws for the time being in force in India. Instant Mudra. is also not a deposit taking company or a chit fund or a company offering any investment schemes as per the rules and regulations for the time being in force in India. </string>
+    <string name="tc_c2">The User of this Android App unequivocally declare and agree and that the User is a natural / legal person who has attained the age of atleast 21 years and is legally allowed to enter into a contract in India. The User is allowed to utilize the services of the Website in accordance with the terms and conditions detailed hereinafter and has agreed to become a paid member of this Website and whose membership fee is not in arrears. In case, Instant Mudra. chooses not to charge any fee for the services provided in the Website, by registering on the Website, the User hereby undertakes to agree and abide by the Terms and Conditions detailed hereinafter.\n\n
+                 If the User violates any of these Terms &amp; Conditions, or otherwise violate an agreement entered into through the medium of the Website, Instant Mudra. may terminate the Users membership, delete his/her profile and any content or information given by the User and/or prohibit the User from using or accessing the Website at any time in its sole discretion, with or without notice, including without limitation if it believes that you are under 21.    </string>
+    <string name="tc_c3">As a User of this Android APP you have agreed to the Terms and Conditions that Instant Mudra. has provided hereunder or anywhere else in this Website including but not limited to disclaimers on this Website. You are advised to read and understand the said Terms and Conditions and in case you do not wish to agree to these Terms and Conditions, please refrain from using the Site. The Website is an online platform providing Users registered on the Website with access to data base of lenders and borrowers. The information is also shared with third party verification agencies and collection agencies etc. Instant mudra. in no manner indulges in the activities of lending or borrowing. Instant mudra. is not an organization registered with the Reserve Bank of India and does not hold any license to engage in any activities relating to lending or borrowing. Instant mudra. is a service provider facilitating the access between person willing to lend and person in need of borrowing. The final decision as regards lending and borrowing is also subject to the choice of the respective Users in their respective capacities as lenders or borrowers. </string>
+    <string name="tc_c4">By using this Android App as a User you hereby represent that you are of legal age to form a binding contract as per the laws prevalent in India for the time being in force. You hereby also represent that you more than 21 years of age. The User also unequivocally agrees to provide true, accurate, current and complete information about as sought by the registration form of the Website. Upon Instant mudra. gaining knowledge of having any reasonable suspicion that the information provided by you is wrong, inaccurate or incorrect, Instant mudra. shall immediately terminate your account without any notice to you in this regard. You shall at all times abide by the Terms and Conditions stated herein and any breach of these conditions may also lead to Instant mudra. terminating your account and appropriate civil and criminal remedies will be sought against you as provided under the laws of India.\n\n
+    Your personal information as User of this Website shall not be shared by Instant mudra. to any unrelated third parties without your consent. However, in case any such information is required to be shared with a third party as directed and authorized by law or court order or any such authority legally allowed to ask for such information, Instant mudra. will be at liberty to share such information. You will be duly informed of such disclosure at the time. </string>
+    <string name="tc_c5">Not with standing anything to the contrary contained herein, neither Instant mudra. nor its affiliated companies, subsidiaries, officers, directors, employees or any related party shall have any liability to you or to any third party for any indirect, incidental, special or consequential damages or any loss of revenue or profits arising under or relating to these terms and conditions. To the maximum extent permitted by law, you waive, release, discharge and hold harmless Instant mudra., its affiliated and subsidiary companies, and each of their directors, officers, employees, and agents, from any and all claims, losses, damages, liabilities, expenses and causes of action arising out of your use of the Website. </string>
+    <string name="tc_c6">You agree to indemnify, save, and hold Instant mudra., its affiliates, contractors, employees, officers, directors, agents and its third party associates, licensors, and partners harmless from any and all claims, losses, damages, and liabilities, costs and expenses, including without limitation legal fees and expenses, arising out of or related to your use or misuse of the services or of the Website, any violation by you of this Agreement, or any breach of the representations, warranties, and covenants made by you herein. Instant mudra. reserves the right, at your expense, to assume the exclusive defense and control of any matter for which you are required to indemnify Instant mudra., including rights to settle, and you agree to cooperate with Instant mudra.’ defense and settlement of these claims. Instant mudra. will use reasonable efforts to notify you of any claim, action, or proceeding brought by a third party that is subject to the foregoing indemnification upon becoming aware of it. This paragraph shall survive termination of this Agreement. </string>
+    <string name="tc_c7">Your use of this Android App and any Term and Conditions stated in this policy is subject to laws of India. In case of any disputes arising out of the use of the Android App, Courts of Delhi will have exclusive jurisdiction.</string>
+
+    <string name="doc_h1">1. Profile</string>
+    <string name="doc_c1">Keep update your profile with profile picture.</string>
+    <string name="doc_h2">2. Employment details</string>
+    <string name="doc_c2">Keep update your employment details in profile screen.</string>
+    <string name="doc_h3">3. Bank statement</string>
+    <string name="doc_c3">Updated 3 months bank statements of salary account.</string>
+    <string name="doc_h4">4. Salary slip</string>
+    <string name="doc_c4">Updated 3 months salary slip.</string>
+    <string name="doc_h5">5. Address</string>
+    <string name="doc_c5">Need update in profile screen.</string>
+
+    <string name="qa_q1">Q : WHY I NEED A NON BANKING FINANCE COMPANY LIKE Instant Mudra?</string>
+    <string name="qa_a1">Answer: You need Instant Mudra:\n\n
+
+•	Instant Mudra you a loan as per your need. Compare to others, who will issue a minimum loan of 1 lakh rupees whereas you need only   Rs. 35000 to address a current problem. Therefore, excess amount becomes a burden/ a debt for a long period of time.\n
+•	Instant Mudra provides loan for only one year compare to 3-6 years in case of another company. By this tenure, your principal   and interest everything   end up quickly. No hidden cost involved.\n
+•	Availability of easy foreclosure and Topup services with no extra charges. No extra time consuming procedure or documentation for these services.</string>
+
+    <string name="qa_q2">Q : HOW MUCH CAN I BORROW AND FOR HOW LONG?</string>
+    <string name="qa_a2">Answer: You can get loans starting from Rs. 1,000 up to Rs.50, 000 as per your requirement and credentials for a span of 30 days only.</string>
+    <string name="qa_q3">Q : WHAT ALL DOCUMENTS ARE REQUIRED BEFORE LOAN DISBURSEMENT?</string>
+    <string name="qa_a3">Answer: please check documents required section.</string>
+    <string name="qa_q4">Q : HOW DOES Instant Mudra MEASURE MY CREDIT WORTHINESS AND HOW LONG DOES THIS TAKE?</string>
+    <string name="qa_a4">Answer: Each customer applies on theInstant Mudra app will need to go through background verification and the internal credit assessment process. The assessment is based on information collected from various data sources like the application form, credit bureaus, bank statements, pay slips, verification reports, social media, etc. The above process is time bound and fully automated therefore within 2–3 days your loan amount will be disbursed based on approvals.</string>
+    <string name="qa_q5">Q : DOESInstant Mudra HAVE ANY INTERNAL CREDIT RATING?</string>
+    <string name="qa_a5">Answer: Yes, the company follows a robust procedure. This is determined by CIBIL score, banking history and other important factors like distance from our office, the status of current residence, job type, current income, etc.</string>
+    <string name="qa_q6">Q : CAN I REPAY MY LOAN EARLY?</string>
+    <string name="qa_a6">Answer: Yes, you can foreclose your remaining loan amount anytime without any closure charges.</string>
+    <string name="qa_q7">Q : CAN I TAKE TOPUP AGAINST MY PREVIOUS LOAN?</string>
+    <string name="qa_a7">Answer: Yes, Instant Mudra topup services after 8 months locking period. During this procedure, you need to provide 6 months bank statements and 3 months payslips only.</string>
+    <string name="qa_q8">Q : REASON OF APPLICATION REJECTION?</string>
+    <string name="qa_a8">Answer: The reason behind any application rejection is mainly due to the customer’s current credit profile.</string>
+    <string name="qa_q9">Q : WHAT IS MY REPAYMENT SCHEDULE?</string>
+    <string name="qa_a9">Answer: Repayment of the loan will happen monthly on an EMI (equated monthly instalment) basis where the amount will be calculated based on amortizing balance. One or two of the instalments might be different which will depend on the timing of the loan.</string>
+    <string name="qa_q10">Q: WHAT HAPPENS IN THE CASE OF A MISSED PAYMENT OR NON-PAYMENT BY A BORROWER?</string>
+    <string name="qa_a10">Answer: If the monthly payment of any EMI is delayed for any reason, a penalty fee and penal interest might be charged by the company. Chintamani suggests all our customer’s not to default in their payment. We planned to create many loyalty programs for our old customers who avoided any defaults or cheque bounce in their past. This is because, the borrowers credit file get impacted which will restrict him / her to get any other credit in the future from any financial institution. The company in an extreme situation is eligible to take any legal action against non payment of the loan amount.</string>
+    <string name="qa_q11">Q: HOW CAN I MAKE MONTHLY PAYMENTS?</string>
+    <string name="qa_a11">Answer: You can pay your EMIs using post dated cheques (PDC), online payment or visit Instant Mudra office and pay by cash.</string>
+    <string name="qa_q12">Q: HOW WILL YOU DISBURSE THE LOAN AMOUNT?</string>
+    <string name="qa_a12">Answer: The Company disburse a cheque issued on customer name soon after the loan approval.</string>
+
+
+    <string name="agree_to_terms">I have read and agree to InstantMudra %1$s and %2$s and authorize InstantMudra</string>
+    <string name="terms_of_service">Terms &amp; Conditions</string>
+    <string name="privacy_policy">Privacy Policy</string>
+
+
+    <!-- Navigation Drawer Items -->
+
+    <string-array name="sarYourCity">
+        <item>Select your city</item>
+        <item>Delhi/NCR</item>
+        <item>Bengaluru</item>
+        <item>Pune</item>
+        <item>Ghaziabad</item>
+        <item>Faridabad</item>
+
+
+    </string-array>
+
+    <string-array name="sarAccountType">
+        <item>Select Account Type</item>
+        <item>SAVING</item>
+        <item>CURRENT</item>
+    </string-array>
+
+    <string-array name="sarEmpType">
+        <item>Select</item>
+        <item>Private</item>
+        <item>Government</item>
+        <item>MNC</item>
+    </string-array>
+
+    <string-array name="sarTakeHomeSalary">
+        <item>Select</item>
+        <item>30000 - 50000</item>
+        <item>51000 - 70000</item>
+        <item>71000 - above</item>
+    </string-array>
+
+
+    <string-array name="sarBankNames">
+        <item>Select Bank</item>
+
+
+        <item>KOTAK</item>
+        <item>YES</item>
+        <item>SYNDICATE</item>
+        <item>CORPORATION</item>
+        <item>PNB</item>
+        <item>UNITED BANK</item>
+        <item>INDUSIND</item>
+        <item>CENTRAL BANK</item>
+        <item>CITI</item>
+        <item>DBS</item>
+        <item>CANARA</item>
+        <item>STANDARD CHARTERED</item>
+        <item>RBL</item>
+        <item>UNION BANK</item>
+        <item>BANK OF BARODA</item>
+        <item>STATE BANK PATIALA</item>
+        <item>STATE BANK MYSORE</item>
+        <item>STATE BANK TRAVANCORE</item>
+        <item>TAMILNAD MERCANTILE</item>
+        <item>STATE BANK BIKANER JAIPUR</item>
+        <item>STATE BANK HYDERABAD</item>
+        <item>BANK OF INDIA</item>
+        <item>BANK OF MAHARASHTRA</item>
+        <item>DENA BANK</item>
+        <item>INDIAN BANK</item>
+        <item>INDIAN OVERSEAS</item>
+        <item>ORIENTAL BANK</item>
+        <item>PUNJAB SIND</item>
+        <item>UCO</item>
+        <item>VIJAYA</item>
+        <item>IDBI</item>
+        <item>BANDHAN</item>
+        <item>CATHOLIC SYRIAN</item>
+        <item>CITY UNION</item>
+        <item>DHANLAXMI</item>
+        <item>DCB</item>
+        <item>FEDERAL</item>
+        <item>IDFC</item>
+        <item>KARNATAKA</item>
+        <item>JAMMU KASHMIR</item>
+        <item>KARUR VYASA</item>
+        <item>LAKSHMI VILAS</item>
+        <item>NAINITAL</item>
+        <item>SOUTH INDIAN</item>
+        <item>RBS</item>
+        <item>Payment Bank</item>
+        <item>SARASWAT BANK</item>
+        <item>TJSB</item>
+        <item>DNB</item>
+        <item>DNS</item>
+        <item>DEUTSCHE BANK</item>
+        <item>GREATER BOMBAY</item>
+        <item>APNA SAHAKARI BANK</item>
+        <item>AKHAND ANAND</item>
+        <item>BASSEIN CATHOLIC</item>
+        <item>ANDHRA BANK</item>
+        <item>AMBERNATH JAI HIND CO OP BANK</item>
+        <item>PUNJAB MAHARASHTRA CO OP BANK</item>
+        <item>HSBC</item>
+        <item>BHARAT</item>
+        <item>SVC BANK</item>
+        <item>SDC</item>
+        <item>SREENIDHI SOUHARDA SAHAKARI BANK</item>
+        <item>OCEAN FIRST</item>
+        <item>CAPITAL SMALL FINANCE BANK LTD</item>
+        <item>KALUPUR COMMERCIAL CO OP BANK</item>
+        <item>KANGRA CO OP BANK</item>
+        <item>BHARTIYA MAHILA BANK</item>
+        <item>SARDAR BHILADWALA PARDI PEOPLES CO OP BANK</item>
+        <item>MODEL CO OPERATIVE BANK</item>
+        <item>MEHSANA URBAN CO OP BANK</item>
+        <item>NEW INDIA CO OP BANK</item>
+        <item>THE NARODA NAGRIK CO OP BANK</item>
+        <item>COSMOS BANK</item>
+        <item>JANAKALYAN SAHAKARI BANK</item>
+        <item>JANATA SAHAKARI BANK</item>
+        <item>MJALGAON JANATA SAHAKARI BANK</item>
+        <item>MANVI PATTANA SOUHARADA SAHAKARI BANK</item>
+        <item>CENTRAL CO OPERATIVE BANK</item>
+        <item>NUTAN NAGARIK SAHAKARI BANK</item>
+        <item>KALYAN JANATA SAHAKARI BANK</item>
+        <item>ABHYUDAYA CO OP BANK</item>
+        <item>AIRTEL BANK</item>
+        <item>EQUITAS SMALL FINANCE BANK</item>
+        <item>AU SMALL FINANCE BANK</item>
+        <item>NAGPUR NAGARIK SAHAKARI BANK</item>
+        <item>TEXTILE CO OPERATIVE BANK</item>
+        <item>JANASEVA SAHAKARI BANK</item>
+        <item>SARASPUR NAGARIK CO OP BANK</item>
+        <item>GP PARSIK BANK</item>
+        <item>TGMC BANK</item>
+        <item>SARVODAYA SAHAKARI BANK</item>
+        <item>SHREE KADI NAGARIK SAHAKARI BANK</item>
+        <item>SAURASHTRA GRAMIN BANK</item>
+        <item>ASSOCIATE CO OP BANK</item>
+        <item>SOLAPUR JANATA SAHAKARI BANK</item>
+        <item>INDRAPRASTHA SEHKARI BANK</item>
+        <item>MAHESH SAHAKARI BANK LTD</item>
+        <item>PUNE PEOPLES CO OP BANK</item>
+        <item>VASAI VIKAS SAH BANK LTD</item>
+        <item>MAHESH BANK</item>
+        <item>UNION CO OP BANK LTD</item>
+        <item>JANATHA SEVA CO OP BANK</item>
+        <item>The Wai Urban Co Operative Bank Limited</item>
+        <item>The Vallabh VidyaNagar Commercial Co Operative Bank Ltd</item>
+        <item>THE VIJAY CO OP BANK</item>
+        <item>ZOROASTRIAN CO OP BANK</item>
+        <item>VAIJAPUR MARCHANTS CO OP BANK</item>
+        <item>NKGSB CO OP BANK</item>
+        <item>THE SUTEX CO OP BANK</item>
+        <item>THE SURAT PEOPLE CO OP BANK LTD</item>
+        <item>GUJARAT AMBUJA CO OP BANK LTD</item>
+        <item>UJJIVAN SMALL FINANCE BANK</item>
+        <item>KANKARIAA MANINAGAR NAG SAH BANK LTD</item>
+        <item>CITIZEN CREDIT CO OP BANK</item>
+        <item>PADMAVATHI CO OP URBAN BANK</item>
+        <item>THE SATARA SAHAKARI BANK LTD</item>
+        <item>MAHANAGAR CO OP BANK LTD</item>
+        <item>Others</item>
+    </string-array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="loan_already_applied">Loan Already Applied !</string>
+    <string name="doc_not_found">You have not uploaded documents !</string>
+    <string name="doc_not_found2">Please upload your current salary slip and bank statement.</string>
+    <string name="age_not_eligile1">You are not eligible.</string>
+    <string name="age_not_eligile2">We are providing loan only for age above than 18.</string>
+    <string name="successfully_applied">Congratulations, you have successfully submitted your loan request with InstantMudra .</string>
+    <string name="call_from_customer">You may receive call from our customer care team to verify the details.</string>
+    <string name="notifs">NOTIFICATION</string>
+
+
+    <string name="loan_applied">Loan Applied</string>
+    <string name="loan_on_process">On process</string>
+    <string name="loan_approved">Approved</string>
+    <string name="loan_sanctioned">Sanctioned</string>
+
+
+</resources>

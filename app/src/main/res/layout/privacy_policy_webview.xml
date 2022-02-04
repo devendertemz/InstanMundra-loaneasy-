@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="7">
+
+
+    <WebView
+        android:id="@+id/webview_privacy_policy"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="6" />
+
+
+    <FrameLayout
+
+        android:id="@+id/layoutTermsButton"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/dimen_5dp"
+        android:layout_marginBottom="@dimen/dimen_10dp"
+        android:padding="@dimen/dimen_5dp"
+
+        android:layout_weight="1">
+
+        <Button
+            android:id="@+id/tvWebTerms"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textSize="@dimen/dimen_13dp"
+            android:background="@drawable/corner_button_background"
+            android:text="Accept &amp; Agree"
+            android:textColor="@color/white"
+           />
+
+
+    </FrameLayout>
+
+
+</LinearLayout>
+
+

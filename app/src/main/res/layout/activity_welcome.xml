@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/view_pager"
+        android:layout_above="@id/layoutDots"
+        android:layout_marginBottom="@dimen/dimen_10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <LinearLayout
+        android:id="@+id/layoutDots"
+        android:layout_above="@id/btn_next"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dots_height"
+        android:layout_marginBottom="@dimen/dots_margin_bottom"
+        android:gravity="center"
+        android:orientation="horizontal" />
+
+    <customfonts.TextView_Roboto_regular
+        android:id="@+id/btn_next"
+        android:layout_above="@id/btn_skip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/dimen_30dp"
+        android:paddingRight="@dimen/dimen_30dp"
+        android:paddingTop="@dimen/dimen_15dp"
+        android:paddingBottom="@dimen/dimen_15dp"
+        android:layout_marginBottom="@dimen/dimen_30dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/shape_roundbutton_background"
+        android:text="@string/next"
+        android:textColor="@android:color/white" />
+
+    <customfonts.TextView_Roboto_regular
+        android:id="@+id/btn_skip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dimen_60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:padding="@dimen/dimen_10dp"
+        android:background="@drawable/shape_roundbutton_background"
+        android:textColor="@color/white"
+        android:text="@string/skip"
+        />
+
+</RelativeLayout>

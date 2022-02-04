@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:background="@android:color/background_light"
+    android:elevation="@dimen/dimen_3dp"
+    android:orientation="vertical">
+
+
+    <customfonts.TextView_Roboto_regular
+        android:id="@+id/tvNotifMsg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_margin="@dimen/dimen_10dp"
+        android:fontFamily="sans-serif"
+        android:gravity="left"
+        android:text="--"
+        android:textColor="@color/black"
+        android:textSize="@dimen/dimen_16sp" />
+
+
+</LinearLayout>

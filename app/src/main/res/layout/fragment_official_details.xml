@@ -1,0 +1,643 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_100"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:weightSum="7">
+
+    <!--<FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="200dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/login_bg"
+            android:orientation="vertical">
+
+
+        </RelativeLayout>
+
+    </FrameLayout>-->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:elevation="@dimen/dimen_3dp"
+        android:background="@color/white"
+        android:layout_height="100dp">
+
+        <RelativeLayout
+            android:id="@+id/lly1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/dimen_2dp"
+            android:paddingBottom="@dimen/dimen_2dp"
+            android:layout_marginRight="@dimen/dimen_30dp"
+            android:layout_marginLeft="@dimen/dimen_30dp"
+            android:layout_marginTop="@dimen/dimen_15dp"
+            android:orientation="horizontal"  >
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:layout_marginRight="@dimen/dimen_10dp"
+                android:layout_marginLeft="@dimen/dimen_10dp"
+                android:layout_centerVertical="true"
+                android:background="@color/gray_400"/>
+
+            <ImageView
+                android:id="@+id/icon_1"
+                android:layout_width="@dimen/dimen_30dp"
+                android:layout_height="@dimen/dimen_30dp"
+                app:srcCompat="@drawable/ic_1"/>
+
+            <ImageView
+                android:id="@+id/icon_2"
+                android:layout_width="@dimen/dimen_30dp"
+                android:layout_height="@dimen/dimen_30dp"
+                android:layout_centerHorizontal="true"
+                app:srcCompat="@drawable/ic_2"/>
+
+            <ImageView
+                android:id="@+id/icon_3"
+                android:layout_width="@dimen/dimen_30dp"
+                android:layout_height="@dimen/dimen_30dp"
+                android:layout_alignParentRight="true"
+                app:srcCompat="@drawable/ic_3"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/ly2"
+            android:layout_below="@id/lly1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/dimen_25dp"
+            android:layout_marginLeft="@dimen/dimen_25dp"
+            android:layout_marginTop="@dimen/dimen_5dp"
+
+            android:orientation="horizontal"  >
+
+
+            <customfonts.TextView_Roboto_light
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Personal\nDetails"
+                android:textSize="@dimen/dimen_12sp"
+                />
+
+            <customfonts.TextView_Roboto_light
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="Official\nDetails"
+                android:textSize="@dimen/dimen_12sp"
+                />
+
+            <customfonts.TextView_Roboto_light
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="Bank\nDetails"
+                android:textSize="@dimen/dimen_12sp"
+                />
+
+
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dimen_5dp"
+        android:layout_marginRight="@dimen/dimen_5dp"
+        android:background="@color/gray_100"
+        android:fadeScrollbars="false"
+        android:scrollbars="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <customfonts.TextView_Roboto_regular
+                android:layout_width="321dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"
+                android:fontFamily="serif"
+                android:gravity="center"
+                android:text="Please update below employment details"
+                android:textColor="@color/gray_900"
+                android:textSize="@dimen/dimen_15sp" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <customfonts.MyTextView_Roboto_Medium
+                        android:id="@+id/tvEmpTypeText"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_weight="1"
+                        android:text="Employment Type"
+                        android:textSize="17sp" />
+
+                    <customfonts.MyTextView_Roboto_Medium
+                        android:id="@+id/tvTakeHomeSalaryText"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_weight="1"
+                        android:text="Take Home Salary"
+                        android:textSize="17sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <androidx.appcompat.widget.AppCompatSpinner
+                        android:id="@+id/spEmpType"
+                        style="@style/Base.Widget.AppCompat.Spinner.Underlined"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:dropDownVerticalOffset="50dp"
+                        android:spinnerMode="dropdown"
+                        app:backgroundTint="@color/gray_light" />
+
+
+                    <!--<android.support.v7.widget.AppCompatSpinner
+                        android:id="@+id/spSalary"
+                        style="@style/Base.Widget.AppCompat.Spinner.Underlined"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:dropDownVerticalOffset="50dp"
+                        android:spinnerMode="dropdown"
+                        app:backgroundTint="@color/gray_light" />-->
+
+                   <customfonts.EditText_Roboto_Light
+                       android:layout_width="0dp"
+                       android:layout_height="wrap_content"
+                       android:theme="@style/TextLabel"
+                       android:layout_marginLeft="10dp"
+                       android:layout_marginRight="10dp"
+                       android:layout_marginTop="@dimen/dimen_3dp"
+                       android:id="@+id/etTakeHomeSalary"
+                       android:inputType="number"
+                       android:hint="salary"
+                       android:layout_weight="1" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <customfonts.MyTextView_Roboto_Medium
+                        android:id="@+id/tvSalaryModeText"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:text="Mode of salary"
+                        android:textSize="17sp" />
+
+                    <customfonts.MyTextView_Roboto_Medium
+                        android:id="@+id/tvWorkingYearsText"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:text="Working years"
+                        android:textSize="17sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <androidx.appcompat.widget.AppCompatSpinner
+                        android:id="@+id/spSalaryMode"
+                        style="@style/Base.Widget.AppCompat.Spinner.Underlined"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:dropDownVerticalOffset="50dp"
+                        android:spinnerMode="dropdown"
+                        app:backgroundTint="@color/gray_light">
+
+                    </androidx.appcompat.widget.AppCompatSpinner>
+
+
+                    <androidx.appcompat.widget.AppCompatSpinner
+                        android:id="@+id/spWorkingYearOrg"
+                        style="@style/Base.Widget.AppCompat.Spinner.Underlined"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:dropDownVerticalOffset="50dp"
+                        android:spinnerMode="dropdown"
+                        app:backgroundTint="@color/gray_light">
+
+                    </androidx.appcompat.widget.AppCompatSpinner>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_10dp"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen_10dp"
+                    android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dimen_10dp"
+                    android:background="@drawable/id_card_svg"/>
+
+                <customfonts.TextView_Roboto_regular
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/dimen_17sp"
+                    android:fontFamily="sans-serif-condensed"
+                    android:layout_marginLeft="@dimen/dimen_10dp"
+                    android:textStyle="bold"
+                    android:layout_gravity="center"
+                    android:text="Upload Your Aadhar Card"/>
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen_10dp"
+                    android:layout_marginBottom="@dimen/dimen_10dp"
+                    >
+
+                    <LinearLayout
+                        android:id="@+id/ly1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dimen_70dp"
+                        android:orientation="vertical">
+
+                        <customfonts.TextView_Roboto_light
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="Front"/>
+
+                        <ImageView
+                            android:id="@+id/ivAdharFront"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/dimen_5dp"
+                            android:layout_marginRight="@dimen/dimen_5dp"
+                            android:layout_marginTop="@dimen/dimen_5dp"
+                            android:layout_marginBottom="@dimen/dimen_6dp"
+                            android:background="@color/gray_50"
+                            android:padding="@dimen/dimen_5dp"
+                            android:elevation="@dimen/dimen_4dp"
+                            android:foreground="?attr/selectableItemBackground"
+                            android:clickable="true"
+
+                            app:srcCompat="@drawable/camera_svg"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_toRightOf="@id/ly1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dimen_30dp"
+                        android:layout_marginRight="@dimen/dimen_10dp"
+                        android:orientation="vertical">
+
+                        <customfonts.TextView_Roboto_light
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="Back"/>
+
+                        <ImageView
+                            android:id="@+id/ivAdharBack"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/dimen_5dp"
+                            android:layout_marginRight="@dimen/dimen_5dp"
+                            android:layout_marginTop="@dimen/dimen_5dp"
+                            android:layout_marginBottom="@dimen/dimen_6dp"
+                            android:background="@color/gray_50"
+                            android:padding="@dimen/dimen_5dp"
+                            android:elevation="@dimen/dimen_4dp"
+                            android:foreground="?attr/selectableItemBackground"
+                            android:clickable="true"
+
+                            app:srcCompat="@drawable/camera_svg"/>
+
+
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_10dp"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen_10dp"
+                    android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dimen_10dp"
+                    android:background="@drawable/pan_card_svg"/>
+
+                <customfonts.TextView_Roboto_regular
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/dimen_17sp"
+                    android:fontFamily="sans-serif-condensed"
+                    android:layout_marginLeft="@dimen/dimen_10dp"
+                    android:textStyle="bold"
+                    android:layout_gravity="center"
+                    android:text="Upload Your Pan Card"/>
+
+
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/ivPan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/gray_50"
+                    android:layout_marginLeft="@dimen/dimen_75dp"
+                    android:layout_marginTop="@dimen/dimen_10dp"
+                    android:layout_marginBottom="@dimen/dimen_12dp"
+                    android:padding="@dimen/dimen_5dp"
+                    android:elevation="@dimen/dimen_4dp"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:clickable="true"
+                    app:srcCompat="@drawable/camera_svg"/>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_10dp"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/input_layout_CompanyName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:theme="@style/TextLabel">
+
+                    <customfonts.EditText_Roboto_Light
+                        android:id="@+id/etCompanyName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:drawableLeft="@drawable/icon_organization_25"
+                        android:drawablePadding="@dimen/dimen_5dp"
+                        android:drawableStart="@drawable/icon_organization_25"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:hint="Organization Name"
+                        android:inputType="text"
+                        android:maxLines="1"
+                        android:padding="10dp" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="@dimen/dimen_12dp"
+                    android:layout_marginRight="@dimen/dimen_12dp"
+                    android:background="@color/colorPrimary" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/input_layout_CompanyAddress"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="5dp"
+                    android:theme="@style/TextLabel">
+
+                    <customfonts.EditText_Roboto_Light
+                        android:id="@+id/etCompanyAddress"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:drawableLeft="@drawable/icon_company_address_25"
+                        android:drawablePadding="@dimen/dimen_5dp"
+                        android:drawableStart="@drawable/icon_company_address_25"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:hint="Organization Address"
+                        android:inputType="text"
+                        android:padding="10dp" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="@dimen/dimen_12dp"
+                    android:layout_marginRight="@dimen/dimen_12dp"
+                    android:background="@color/colorPrimary" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/input_layout_Pancard"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="5dp"
+                    android:theme="@style/TextLabel">
+
+                    <customfonts.EditText_Roboto_Light
+                        android:id="@+id/etPanCard"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:drawableLeft="@drawable/icons_pan_card_25"
+                        android:drawablePadding="@dimen/dimen_5dp"
+                        android:drawableStart="@drawable/icons_pan_card_25"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:hint="Enter Pan Card No"
+                        android:inputType="text"
+                        android:textAllCaps="true"
+                        android:maxLines="1"
+                        android:maxLength="10"
+                        android:padding="10dp" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="@dimen/dimen_12dp"
+                    android:layout_marginRight="@dimen/dimen_12dp"
+                    android:background="@color/colorPrimary" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/input_layout_Aadhar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="5dp"
+                    android:theme="@style/TextLabel">
+
+                    <customfonts.EditText_Roboto_Light
+                        android:id="@+id/etAadharCard"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:drawableLeft="@drawable/icon_aadhar_card_25"
+                        android:drawablePadding="@dimen/dimen_5dp"
+                        android:drawableStart="@drawable/icon_aadhar_card_25"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:hint="@string/enter_aadhar"
+                        android:inputType="number"
+                        android:maxLines="1"
+                        android:maxLength="12"
+                        android:padding="10dp" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginBottom="@dimen/dimen_15dp"
+                    android:layout_marginLeft="@dimen/dimen_12dp"
+                    android:layout_marginRight="@dimen/dimen_12dp"
+                    android:background="@color/colorPrimary" />
+
+            </LinearLayout>
+
+            <androidx.appcompat.widget.AppCompatCheckBox
+                android:id="@+id/cbTermsCondition"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="25dp"
+                android:text="@string/terms_amp_conditions"
+                android:textSize="17sp" />
+
+
+
+            <Button
+                android:id="@+id/btSubmitAllDetails"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/corner_button_background"
+                android:text="@string/bt_submitPhoneNo"
+                android:foreground="?attr/selectableItemBackground"
+                android:clickable="true"
+                android:textAllCaps="false"
+                android:textColor="#FFFFFF"
+                android:textSize="17sp"
+                android:focusable="true" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
+

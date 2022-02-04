@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_100"
+    android:orientation="vertical"
+    tools:context=".BankDetailsActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarBankDetails"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/ivBack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                app:srcCompat="@drawable/go_back_left_arrow"
+                tools:ignore="VectorDrawableCompat" />
+
+            <customfonts.TextView_Roboto_regular
+                android:id="@+id/tv_toolbar_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dimen_25dp"
+                android:layout_toRightOf="@id/ivBack"
+                android:text="Mandatory details"
+                android:textColor="@color/white"
+                android:textSize="@dimen/dimen_20sp" />
+
+
+
+
+        </RelativeLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/lyBottom"
+            android:layout_marginTop="@dimen/dimen_15dp"
+            android:fadeScrollbars="false"
+            android:scrollbars="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:id="@+id/ly1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:elevation="@dimen/dimen_4dp"
+                    android:background="@color/white"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvUploadStatmnt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginRight="30dp"
+                        android:layout_marginTop="20dp"
+                        android:background="@drawable/shape_button_background"
+                        android:gravity="center"
+                        android:padding="13dp"
+                        android:text="@string/upload_bank_statement"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="16sp" />
+
+
+                    <customfonts.EditText_Roboto_Regular
+                        android:id="@+id/etBankStatementPin"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawablePadding="@dimen/dimen_5dp"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:inputType="text"
+                        android:maxLength="20"
+                        android:maxLines="1"
+                        android:hint="Enter Statement Pin"
+                        android:textSize="@dimen/dimen_17sp"
+                        android:layout_marginLeft="@dimen/dimen_30dp"
+                        android:layout_marginRight="@dimen/dimen_30dp"
+                        android:layout_marginTop="@dimen/dimen_10dp"
+                        android:textColor="@color/black"
+                        android:textColorHighlight="@color/gray_600"
+                        android:theme="@style/ThemeEditText"/>
+
+                    <TextView
+                        android:id="@+id/tvUploadSlip1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/dimen_15dp"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginRight="30dp"
+                        android:layout_marginTop="20dp"
+                        android:background="@drawable/shape_button_background"
+                        android:gravity="center"
+                        android:padding="13dp"
+                        android:text="@string/upload_salary_slip1"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="16sp" />
+
+
+                    <TextView
+                        android:id="@+id/tvUploadSlip2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/dimen_15dp"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginRight="30dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/shape_button_background"
+                        android:gravity="center"
+                        android:padding="13dp"
+                        android:text="@string/upload_salary_slip2"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/tvUploadSlip3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/dimen_15dp"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginRight="30dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/shape_button_background"
+                        android:gravity="center"
+                        android:padding="13dp"
+                        android:text="@string/upload_salary_slip3"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="16sp" />
+
+                </LinearLayout>
+
+
+
+
+            </RelativeLayout>
+        </ScrollView>
+
+
+        <LinearLayout
+            android:id="@+id/lyBottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="2"
+            android:orientation="horizontal"
+            android:layout_alignParentBottom="true">
+
+
+
+            <Button
+                android:id="@+id/btSubmitDetails"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:foreground="?attr/selectableItemBackground"
+                android:clickable="true"
+                android:layout_weight="1"
+                android:background="@drawable/corner_button_background"
+                android:text="Submit"
+                android:textAllCaps="false"
+                android:textColor="#FFFFFF"
+                android:textSize="17sp"
+                android:focusable="true" />
+
+
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</LinearLayout>

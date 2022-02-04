@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#DA5F6A">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Congratulations! Your Laon has been Approved."
+        android:textSize="17sp"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textStyle="bold"  />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:id="@+id/a"
+        android:gravity="center"
+        app:srcCompat="@drawable/icon_ok_80"
+        android:scaleType="fitCenter" />
+
+
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:textSize="17sp"
+        android:id="@+id/btConfirmDialog"
+        android:text="OK"
+        android:textAllCaps="false"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="5dp"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/corner_button_background"
+
+        />
+
+</RelativeLayout>

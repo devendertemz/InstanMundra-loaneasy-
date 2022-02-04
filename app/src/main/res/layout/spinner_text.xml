@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/textview_spinner"
+    style="?android:attr/spinnerItemStyle"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:textColor="@color/black"
+    android:paddingTop="@dimen/dimen_5dp"
+    android:paddingBottom="@dimen/dimen_5dp"
+    android:singleLine="true"
+    android:ellipsize="end"
+    />
+<!--
+<TextView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@android:id/text1"
+    android:singleLine="true"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:ellipsize="marquee"
+    android:textColor="@color/black"
+    android:textSize="17sp"
+    android:gravity="center"
+    android:paddingLeft="2dp"/>-->

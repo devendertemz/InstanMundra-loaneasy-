@@ -1,0 +1,390 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dimen_15dp"
+        android:layout_marginRight="@dimen/dimen_15dp"
+        android:elevation="@dimen/dimen_4dp">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:fadeScrollbars="false"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <customfonts.MyTextView_Roboto_Medium
+                    android:id="@+id/tvCalculateLoanText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="serif"
+                    android:gravity="center"
+                    android:text="Calculate your Loan"
+                    android:textColor="@color/gray_900"
+                    android:textSize="22sp" />
+
+                <customfonts.TextView_Roboto_light
+                    android:id="@+id/tvTextSelectAmount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:text="Please select amount"
+                    android:textColor="@color/gray_700"
+                    android:textSize="@dimen/dimen_17sp" />
+
+                <customfonts.TextView_Roboto_light_condensed
+                    android:id="@+id/tvLoanEligibility"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:visibility="gone"
+                    android:text="--"
+                    android:textColor="@color/intro_text2"
+                    android:textSize="13sp" />
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:id="@+id/layout_enash">
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/white"
+                        android:layout_gravity="center"
+                        android:textAllCaps="false"
+                        android:visibility="gone"
+                        android:id="@+id/btENash"
+                        android:drawablePadding="@dimen/dimen_10dp"
+                        android:layout_marginTop="@dimen/dimen_20dp"
+                        android:background="@drawable/corner_button_background"
+                        android:drawableLeft="@drawable/ecs_mandate_new"
+                        android:text="Register For Enash"
+                        android:textSize="@dimen/dimen_15sp"/>
+
+                </FrameLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="@dimen/dimen_25dp"
+                    android:orientation="horizontal">
+
+                    <customfonts.TextView_Roboto_regular
+                        android:id="@+id/tvMinamntt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dp"
+                        android:fontFamily="sans-serif"
+                        android:text="Amount"
+                        android:textSize="@dimen/dimen_15sp" />
+
+                    <ImageView
+                        android:layout_width="18dp"
+                        android:layout_height="18dp"
+                        android:layout_marginRight="@dimen/dimen_5dp"
+                        android:layout_marginTop="@dimen/dimen_5dp"
+                        android:layout_toLeftOf="@id/tvAmountSelected"
+                        app:srcCompat="@drawable/ic_rupee_black" />
+
+                    <customfonts.TextView_Roboto_regular
+                        android:id="@+id/tvAmountSelected"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dp"
+                        android:fontFamily="sans-serif"
+                        android:text="3,000"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                </RelativeLayout>
+
+                <SeekBar
+                    android:id="@+id/seekBarLoanAmount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dimen_8dp"
+                    android:layout_marginRight="@dimen/dimen_8dp"
+                    android:layout_marginTop="@dimen/dimen_15dp"
+                    android:layout_weight="1.5"
+                    android:max="30"
+                    android:maxHeight="6dp"
+                    android:progressDrawable="@drawable/seekbar_progress"
+                    android:splitTrack="false"
+                    android:thumb="@drawable/custom_thumb" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:layout_marginTop="20dp"
+                    android:orientation="horizontal">
+
+                    <customfonts.TextView_Roboto_regular
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:visibility="gone"
+                        android:fontFamily="sans-serif"
+                        android:text="Loan period (in Days)"
+                        android:textSize="@dimen/dimen_15sp" />
+
+                    <customfonts.TextView_Roboto_regular
+                        android:id="@+id/tvDays"
+                        android:visibility="gone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/dimen_25dp"
+                        android:fontFamily="sans-serif"
+                        android:text="7"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <SeekBar
+                    android:id="@+id/seekbarDays"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:layout_marginBottom="@dimen/dimen_15dp"
+                    android:layout_marginLeft="@dimen/dimen_8dp"
+                    android:layout_marginRight="@dimen/dimen_4dp"
+                    android:layout_marginTop="@dimen/dimen_15dp"
+                    android:layout_weight="1.5"
+                    android:maxHeight="6dp"
+                    android:progressDrawable="@drawable/seekbar_progress"
+                    android:splitTrack="false"
+                    android:thumb="@drawable/custom_thumb" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="3dp"
+                    android:layout_marginTop="@dimen/dimen_20dp"
+                    android:background="@drawable/shadow"
+                    android:visibility="gone" />
+
+                <LinearLayout
+                    android:id="@+id/lyReceipt"
+                    android:visibility="visible"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/gray_100"
+                    android:layout_marginTop="@dimen/dimen_5dp"
+                    android:orientation="vertical">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dimen_5dp"
+                        android:orientation="horizontal">
+
+                        <customfonts.TextView_Roboto_regularcondensed
+                            android:layout_width="160dp"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="@dimen/dimen_10dp"
+                            android:textSize="@dimen/dimen_15sp"
+                            android:text="Total interest"
+                            />
+
+
+
+                        <customfonts.TextView_Roboto_condensed_bold
+                            android:id="@+id/rcTotalInterest"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="--"
+                            />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:visibility="gone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dimen_5dp"
+                        android:orientation="horizontal">
+
+                        <customfonts.TextView_Roboto_regularcondensed
+                            android:layout_width="160dp"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="@dimen/dimen_10dp"
+                            android:textSize="@dimen/dimen_15sp"
+                            android:text="Platfrom Charges"
+                            />
+
+
+                        <customfonts.TextView_Roboto_condensed_bold
+                            android:id="@+id/tvPlatfromCharges"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="--"
+                            />
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dimen_5dp"
+                        android:orientation="horizontal">
+
+                        <customfonts.TextView_Roboto_regularcondensed
+                            android:layout_width="160dp"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="@dimen/dimen_10dp"
+                            android:text="Processing fee"
+                            />
+
+                        <customfonts.TextView_Roboto_condensed_bold
+                            android:id="@+id/rcProcFee"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="--"
+                            />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dimen_5dp"
+                        android:orientation="horizontal">
+
+                        <customfonts.TextView_Roboto_regularcondensed
+                            android:layout_width="160dp"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="@dimen/dimen_10dp"
+                            android:textSize="@dimen/dimen_15sp"
+                            android:text="GST (18%)"
+                            />
+
+                        <customfonts.TextView_Roboto_condensed_bold
+                            android:id="@+id/rcGst"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="--"
+                            />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="@dimen/dimen_5dp"
+                        android:background="@color/gray_300" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dimen_5dp"
+                        android:layout_marginBottom="@dimen/dimen_5dp"
+                        android:orientation="horizontal">
+
+                        <customfonts.TextView_Roboto_regularcondensed
+                            android:layout_width="160dp"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="@dimen/dimen_10dp"
+                            android:textSize="@dimen/dimen_15sp"
+                            android:text="Disbursed amount"
+                            />
+
+                        <customfonts.TextView_Roboto_condensed_bold
+                            android:id="@+id/rcDisbAmount"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="--"
+                            />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dimen_5dp"
+                        android:layout_marginBottom="@dimen/dimen_5dp"
+                        android:orientation="horizontal">
+
+                        <customfonts.TextView_Roboto_regularcondensed
+                            android:layout_width="160dp"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="@dimen/dimen_10dp"
+                            android:textSize="@dimen/dimen_15sp"
+                            android:text="Repay amount"
+                            />
+
+                        <customfonts.TextView_Roboto_condensed_bold
+                            android:id="@+id/rcRepayAmount"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="--"
+                            />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="3dp"
+                    android:layout_marginBottom="@dimen/dimen_20dp"
+                    android:background="@drawable/shadow"
+                    android:visibility="gone" />
+
+                <Button
+                    android:id="@+id/btApplyForLoan"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/corner_button_background"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:text="Submit"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+        </ScrollView>
+    </androidx.cardview.widget.CardView>
+
+
+
+
+</FrameLayout>

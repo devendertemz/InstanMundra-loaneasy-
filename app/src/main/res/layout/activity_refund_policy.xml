@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".DrawerItems.RefundPolicy">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/dimen_12dp"
+        android:elevation="@dimen/dimen_4dp">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+
+
+
+                <customfonts.MyTextView_Roboto_Medium
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dimen_8dp"
+                    android:layout_marginRight="@dimen/dimen_5dp"
+                    android:layout_marginTop="@dimen/dimen_20dp"
+                    android:layout_marginBottom="@dimen/dimen_20dp"
+                    android:text="Cancellation &amp; Refund Policy "
+                    android:gravity="center"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/dimen_18sp"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/gray_600"
+                    android:layout_marginLeft="@dimen/dimen_15dp"
+                    android:layout_marginRight="@dimen/dimen_15dp"
+                    />
+
+                <customfonts.TextView_Roboto_regular
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dimen_8dp"
+                    android:layout_marginRight="@dimen/dimen_5dp"
+                    android:layout_marginTop="@dimen/dimen_20dp"
+                    android:text="The cancellation and refund policy for the loans sanctioned by Instant Mudra is under :"
+                    android:textColor="@color/gray_800"
+                    android:textSize="@dimen/dimen_15sp"/>
+
+
+
+                <customfonts.TextView_Roboto_regular
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dimen_8dp"
+                    android:layout_marginRight="@dimen/dimen_5dp"
+                    android:layout_marginTop="@dimen/dimen_20dp"
+                    android:text="@string/policy1"
+                    android:textColor="@color/gray_800"
+                    android:textSize="@dimen/dimen_15sp"/>
+
+
+                <customfonts.TextView_Roboto_regular
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dimen_8dp"
+                    android:layout_marginRight="@dimen/dimen_5dp"
+                    android:layout_marginTop="@dimen/dimen_20dp"
+                    android:text="@string/policy2"
+                    android:textColor="@color/gray_800"
+                    android:textSize="@dimen/dimen_15sp"/>
+
+
+
+                <customfonts.TextView_Roboto_regular
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dimen_8dp"
+                    android:layout_marginRight="@dimen/dimen_5dp"
+                    android:layout_marginTop="@dimen/dimen_20dp"
+                    android:text="@string/policy3"
+                    android:textColor="@color/gray_800"
+                    android:textSize="@dimen/dimen_15sp"/>
+
+
+                <customfonts.TextView_Roboto_regular
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dimen_8dp"
+                    android:layout_marginRight="@dimen/dimen_5dp"
+                    android:layout_marginTop="@dimen/dimen_20dp"
+                    android:text="@string/policy4"
+                    android:textColor="@color/gray_800"
+                    android:textSize="@dimen/dimen_15sp"/>
+
+
+            </LinearLayout>
+        </ScrollView>
+    </androidx.cardview.widget.CardView>
+
+
+
+</LinearLayout>

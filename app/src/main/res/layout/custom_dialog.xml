@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/shape_dialog_bg"
+    android:layout_gravity="center"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/smiley"
+            android:layout_marginTop="@dimen/dimen_10dp"
+            android:layout_height="60dp"
+            android:layout_width="60dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/smiley"/>
+
+        <customfonts.TextView_Roboto_regular
+            android:id="@+id/txt_dia"
+            android:layout_below="@id/smiley"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="10dp"
+            android:text="Welcome to Instant Mudra"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="@dimen/dimen_20sp" />
+
+        <customfonts.TextView_Roboto_regular
+            android:id="@+id/txt_da"
+            android:layout_below="@id/txt_dia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="10dp"
+            android:text="Take your loan hasslefree"
+            android:textColor="@color/white"
+            android:textSize="@dimen/dimen_20sp" />
+
+        <customfonts.TextView_Roboto_regular
+            android:id="@+id/txt"
+            android:layout_below="@id/txt_da"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_margin="10dp"
+            android:text="powered by Chintamani Finlease"
+            android:textColor="@color/white"
+            android:textSize="@dimen/dimen_12sp" />
+
+    </RelativeLayout>
+
+
+    <customfonts.TextView_Roboto_regular
+        android:id="@+id/start"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rl"
+        android:layout_marginTop="15dp"
+        android:background="@color/dark_red"
+        android:gravity="center"
+        android:padding="@dimen/dimen_20dp"
+        android:text="Let's get started"
+        android:textColor="@color/white"
+        android:textSize="@dimen/dimen_16sp"
+        android:textStyle="bold" />
+
+
+</RelativeLayout>

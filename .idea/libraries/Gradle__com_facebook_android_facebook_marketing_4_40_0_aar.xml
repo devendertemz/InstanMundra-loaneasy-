@@ -1,0 +1,21 @@
+<component name="libraryTable">
+  <library name="Gradle: com.facebook.android:facebook-marketing:4.40.0@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/52e91da3d9fe6d6e853a38a7a121fc46/jetified-facebook-marketing-4.40.0/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/52e91da3d9fe6d6e853a38a7a121fc46/jetified-facebook-marketing-4.40.0/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/52e91da3d9fe6d6e853a38a7a121fc46/jetified-facebook-marketing-4.40.0/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/f86deb166a87a31308e6a9e73f70452d/jetified-facebook-marketing-4.40.0/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/f86deb166a87a31308e6a9e73f70452d/jetified-facebook-marketing-4.40.0/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/f86deb166a87a31308e6a9e73f70452d/jetified-facebook-marketing-4.40.0/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/452a6f78aa14387f998f2a88e61a8e88/jetified-facebook-marketing-4.40.0/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/452a6f78aa14387f998f2a88e61a8e88/jetified-facebook-marketing-4.40.0/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/452a6f78aa14387f998f2a88e61a8e88/jetified-facebook-marketing-4.40.0/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.facebook.android/facebook-marketing/4.40.0/3a7f9e441df154db23621d8a3660061146b22c60/facebook-marketing-4.40.0-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.facebook.android/facebook-marketing/4.40.0/81317e5047536616bcc6620735642c711b68d58e/facebook-marketing-4.40.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

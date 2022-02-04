@@ -1,0 +1,447 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:weightSum="7">
+
+    <ImageView
+        android:id="@+id/ivbg"
+        android:layout_width="match_parent"
+        android:layout_height="320dp"
+        android:layout_alignParentTop="true"
+        android:scaleType="fitStart"
+        app:srcCompat="@drawable/phone_bg" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <customfonts.TextView_Roboto_regular
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_30dp"
+            android:layout_marginTop="@dimen/dimen_20dp"
+            android:layout_marginRight="15dp"
+            android:layout_weight="1"
+            android:text="Bank details"
+            android:textColor="@color/white"
+            android:textSize="@dimen/dimen_20sp" />
+
+        <customfonts.TextView_Roboto_light
+            android:id="@+id/tvSkip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dimen_3dp"
+            android:layout_marginTop="@dimen/dimen_20dp"
+            android:layout_marginRight="@dimen/dimen_30dp"
+            android:layout_alignParentRight="true"
+            android:layout_weight="1"
+            android:text="Skip"
+            android:textColor="@color/white"
+            android:textSize="@dimen/dimen_18sp" />
+    </RelativeLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btSubmitDetails"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="@dimen/dimen_30dp"
+        android:elevation="@dimen/dimen_4dp"
+        android:scrollbars="none">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/dimen_5dp"
+            app:cardCornerRadius="@dimen/dimen_10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <customfonts.TextView_Roboto_light
+                    android:id="@+id/tvNameWlcm"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/dimen_15dp"
+                    android:fontFamily="serif"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:text="Update all below details"
+                    android:textColor="@color/gray_700"
+                    android:textSize="@dimen/dimen_16sp" />
+
+
+
+                <!--Container  for Text view Bank AcctType, Bank Name-->
+                <!--<LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginLeft="@dimen/dimen_5dp"
+                    android:layout_marginRight="@dimen/dimen_5dp"
+                    android:orientation="horizontal"
+                    android:visibility="gone"
+                    android:weightSum="2">
+
+                    <customfonts.TextView_Roboto_regular
+                        android:id="@+id/tvBankNameText"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/dimen_5dp"
+                        android:layout_weight="1"
+                        android:text="Bank account type"
+                        android:textColor="@color/carmine"
+                        android:textSize="17sp" />
+
+
+                    <customfonts.TextView_Roboto_regular
+                        android:id="@+id/tvAccTypeText"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="Bank name"
+                        android:textColor="@color/carmine"
+                        android:textSize="17sp" />
+
+                </LinearLayout>-->
+
+                <!--Container  for Spinner Bank AcctType, Bank Name-->
+                <!--<LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen_5dp"
+                    android:layout_marginLeft="@dimen/dimen_5dp"
+                    android:layout_marginRight="@dimen/dimen_5dp"
+                    android:orientation="horizontal"
+                    android:visibility="gone"
+                    android:weightSum="2">
+
+                    <FrameLayout
+                        android:layout_width="@dimen/dimen_60dp"
+                        android:layout_height="@dimen/dimen_30dp"
+                        android:layout_marginRight="@dimen/dimen_10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/rectangle">
+
+                        <android.support.v7.widget.AppCompatSpinner
+                            android:id="@+id/spAccType"
+                            style="@style/spinner_style"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp"
+                            android:layout_weight="1"
+                            android:dropDownVerticalOffset="50dp"
+                            android:spinnerMode="dropdown"
+                            android:theme="@style/ThemeSpinner"
+                            app:backgroundTint="@color/carmine">
+
+                        </android.support.v7.widget.AppCompatSpinner>
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:layout_width="@dimen/dimen_60dp"
+                        android:layout_height="@dimen/dimen_30dp"
+                        android:layout_marginRight="@dimen/dimen_10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/rectangle">
+
+                        <android.support.v7.widget.AppCompatSpinner
+                            android:id="@+id/spBankName"
+                            style="@style/spinner_style"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp"
+                            android:layout_weight="1"
+                            android:dropDownVerticalOffset="50dp"
+                            android:spinnerMode="dropdown"
+                            android:theme="@style/ThemeSpinner"
+                            app:backgroundTint="@color/carmine">
+
+                        </android.support.v7.widget.AppCompatSpinner>
+                    </FrameLayout>
+
+                </LinearLayout>-->
+
+                <!--Edittext to get customer bank name-->
+               <!-- <customfonts.EditText_Roboto_Light
+                    android:id="@+id/etBankName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen_10dp"
+                    android:background="@color/white"
+                    android:drawableStart="@drawable/ic_bank"
+                    android:drawableLeft="@drawable/ic_bank"
+                    android:drawablePadding="@dimen/dimen_5dp"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:hint="Enter bank Name"
+                    android:inputType="textCapCharacters"
+                    android:maxLines="1"
+                    android:padding="10dp"
+                     />-->
+
+                <!--Edittext to get customer account number-->
+                <!--<android.support.design.widget.TextInputLayout
+                    android:id="@+id/input_layout_CompanyAddress"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginLeft="@dimen/dimen_10dp"
+                    android:layout_marginTop="@dimen/dimen_15dp"
+                    android:layout_marginRight="@dimen/dimen_10dp"
+                    android:theme="@style/TextLabel">
+
+                    <customfonts.EditText_Roboto_Light
+                        android:id="@+id/etAccnNo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:hint="Account number"
+                        android:inputType="number"
+                        android:maxLength="16"
+                        android:paddingLeft="5dp"
+                        android:paddingTop="10dp"
+                        android:paddingRight="10dp"
+                        android:paddingBottom="10dp"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/dimen_17sp"
+                        android:theme="@style/ThemeEditText" />
+                    &lt;!&ndash; <View
+                         android:layout_width="wrap_content"
+                         android:layout_height="1dp"
+                         android:layout_centerVertical="true"
+                         android:background="@color/gray_700"/>&ndash;&gt;
+                </android.support.design.widget.TextInputLayout>-->
+
+                <!--Edittext to get customer bank IFSC code-->
+                <!--<android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="@dimen/dimen_8dp"
+                    android:layout_marginRight="10dp"
+                    android:theme="@style/TextLabel">
+
+                    <customfonts.EditText_Roboto_Light
+                        android:id="@+id/etIfsc"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:focusable="true"
+                        android:visibility="gone"
+                        android:focusableInTouchMode="true"
+                        android:hint="IFSC"
+                        android:inputType="textCapCharacters"
+                        android:maxLength="11"
+                        android:paddingLeft="5dp"
+                        android:paddingTop="10dp"
+                        android:paddingRight="10dp"
+                        android:paddingBottom="10dp"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/dimen_17sp"
+                        android:theme="@style/ThemeEditText" />
+
+                    &lt;!&ndash;<View
+                        android:layout_width="wrap_content"
+                        android:layout_height="1dp"
+                        android:layout_centerVertical="true"
+                        android:background="@color/gray_700"/>&ndash;&gt;
+                </android.support.design.widget.TextInputLayout>-->
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="1dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/dimen_5dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="@dimen/dimen_5dp"
+                    android:background="@color/gray_300" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dimen_5dp"
+                    android:layout_marginRight="@dimen/dimen_5dp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:orientation="vertical">
+
+                        <customfonts.TextView_Roboto_regularcondensed
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="20dp"
+                            android:layout_weight="1"
+                            android:text="Bank Statement"
+                            android:textColor="@color/carmine"
+                            android:textSize="15sp" />
+
+                        <customfonts.TextView_Roboto_light_condensed
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="10dp"
+                            android:layout_weight="1"
+                            android:text="(for last 6 months)"
+                            android:textColor="@color/carmine_light"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+
+                    <customfonts.TextView_Roboto_regular
+                        android:id="@+id/tvUploadStatmnt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginRight="10dp"
+                        android:gravity="center"
+                        android:padding="13dp"
+                        android:text="@string/upload_bank_statement"
+                        android:textColor="@color/gray_500"
+                        android:textSize="14sp" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="1dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/dimen_5dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="@dimen/dimen_5dp"
+                    android:background="@color/gray_300" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dimen_5dp"
+                    android:layout_marginRight="@dimen/dimen_5dp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:orientation="vertical">
+
+                        <customfonts.TextView_Roboto_regularcondensed
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="20dp"
+                            android:layout_weight="1"
+                            android:text="Salary Slips"
+                            android:textColor="@color/carmine"
+                            android:textSize="15sp" />
+
+                        <customfonts.TextView_Roboto_light_condensed
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="10dp"
+                            android:layout_weight="1"
+                            android:text="(for last 3 months)"
+                            android:textColor="@color/carmine_light"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="45dp"
+                        android:layout_marginRight="@dimen/dimen_10dp"
+                        android:layout_marginBottom="10dp"
+                        android:orientation="vertical">
+
+                        <customfonts.TextView_Roboto_regular
+                            android:id="@+id/tvUploadSlip1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="30dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginRight="30dp"
+                            android:gravity="center"
+                            android:padding="13dp"
+                            android:text="@string/slip_1"
+                            android:textColor="@color/gray_500"
+                            android:textSize="14sp" />
+
+                        <View
+                            android:layout_width="wrap_content"
+                            android:layout_height="1dp"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="@dimen/dimen_10dp"
+                            android:layout_marginRight="@dimen/dimen_10dp"
+                            android:background="@color/gray_300" />
+
+                        <customfonts.TextView_Roboto_regular
+                            android:id="@+id/tvUploadSlip2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="30dp"
+                            android:layout_marginRight="30dp"
+                            android:gravity="center"
+                            android:padding="13dp"
+                            android:text="@string/slip_2"
+                            android:textColor="@color/gray_500"
+                            android:textSize="14sp" />
+
+                        <View
+                            android:layout_width="wrap_content"
+                            android:layout_height="1dp"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="@dimen/dimen_10dp"
+                            android:layout_marginRight="@dimen/dimen_10dp"
+                            android:background="@color/gray_300" />
+
+                        <customfonts.TextView_Roboto_regular
+                            android:id="@+id/tvUploadSlip3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="30dp"
+                            android:layout_marginRight="30dp"
+                            android:layout_marginBottom="10dp"
+                            android:gravity="center"
+                            android:padding="13dp"
+                            android:text="@string/slip_3"
+                            android:textColor="@color/gray_500"
+                            android:textSize="14sp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </ScrollView>
+
+    <customfonts.MyTextView_Roboto_Medium
+        android:id="@+id/btSubmitDetails"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:background="@drawable/corner_button_background"
+        android:clickable="true"
+        android:foreground="?attr/selectableItemBackground"
+        android:gravity="center"
+        android:text="Submit"
+        android:textColor="@color/white"
+        android:textSize="@dimen/dimen_20sp" />
+
+</RelativeLayout>
+
+

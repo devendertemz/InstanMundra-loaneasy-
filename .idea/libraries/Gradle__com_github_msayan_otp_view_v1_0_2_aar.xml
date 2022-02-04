@@ -1,0 +1,17 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.msayan:otp-view:v1.0.2@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/bc472a15f964cdc24c3c226c547d4053/jetified-otp-view-v1.0.2/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/bc472a15f964cdc24c3c226c547d4053/jetified-otp-view-v1.0.2/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/bc472a15f964cdc24c3c226c547d4053/jetified-otp-view-v1.0.2/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/a60e7fbb235f6b4a31e924221530f1f0/jetified-otp-view-v1.0.2/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/a60e7fbb235f6b4a31e924221530f1f0/jetified-otp-view-v1.0.2/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/a60e7fbb235f6b4a31e924221530f1f0/jetified-otp-view-v1.0.2/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/38f8ff6391d7b8872cc7c1e3fea8ea4d/jetified-otp-view-v1.0.2/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/38f8ff6391d7b8872cc7c1e3fea8ea4d/jetified-otp-view-v1.0.2/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/38f8ff6391d7b8872cc7c1e3fea8ea4d/jetified-otp-view-v1.0.2/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

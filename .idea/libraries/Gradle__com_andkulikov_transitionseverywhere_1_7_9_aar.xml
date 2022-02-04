@@ -1,0 +1,26 @@
+<component name="libraryTable">
+  <library name="Gradle: com.andkulikov:transitionseverywhere:1.7.9@aar">
+    <ANNOTATIONS>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/048aaf93d4b9b84b0d7cd5a06eda6dbc/jetified-transitionseverywhere-1.7.9/annotations.zip!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/327b4955b7b944e58f45638b8c465b8c/jetified-transitionseverywhere-1.7.9/annotations.zip!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/b29cd74ca958fadab0073659dffe33dc/jetified-transitionseverywhere-1.7.9/annotations.zip!/" />
+    </ANNOTATIONS>
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/048aaf93d4b9b84b0d7cd5a06eda6dbc/jetified-transitionseverywhere-1.7.9/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/048aaf93d4b9b84b0d7cd5a06eda6dbc/jetified-transitionseverywhere-1.7.9/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/048aaf93d4b9b84b0d7cd5a06eda6dbc/jetified-transitionseverywhere-1.7.9/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/327b4955b7b944e58f45638b8c465b8c/jetified-transitionseverywhere-1.7.9/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/327b4955b7b944e58f45638b8c465b8c/jetified-transitionseverywhere-1.7.9/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/327b4955b7b944e58f45638b8c465b8c/jetified-transitionseverywhere-1.7.9/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/b29cd74ca958fadab0073659dffe33dc/jetified-transitionseverywhere-1.7.9/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/b29cd74ca958fadab0073659dffe33dc/jetified-transitionseverywhere-1.7.9/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/b29cd74ca958fadab0073659dffe33dc/jetified-transitionseverywhere-1.7.9/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.andkulikov/transitionseverywhere/1.7.9/a4cae4a7defe604e9763506fcba53acbc2809b09/transitionseverywhere-1.7.9-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.andkulikov/transitionseverywhere/1.7.9/7b25eaa3c5787e312b4cf0dc4e806d654f2e7b99/transitionseverywhere-1.7.9-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

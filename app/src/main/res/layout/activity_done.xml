@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <FrameLayout
+        android:id="@+id/rl1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dimen_30dp"
+        android:layout_marginTop="@dimen/dimen_30dp"
+        android:layout_marginRight="@dimen/dimen_30dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            app:srcCompat="@drawable/done_bg" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|bottom"
+            android:layout_marginTop="42dp"
+            app:srcCompat="@drawable/icon_done" />
+    </FrameLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/tvDone"
+        android:layout_below="@id/rl1"
+        android:fadeScrollbars="false"
+        android:scrollbars="vertical">
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="vertical">
+
+            <customfonts.TextView_Roboto_regular
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:padding="8dp"
+                android:text="Thank You !"
+                android:textColor="#4d4d4d"
+                android:textSize="@dimen/dimen_20sp" />
+
+
+            <customfonts.TextView_Roboto_light
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="@dimen/dimen_5dp"
+                android:layout_marginRight="@dimen/dimen_5dp"
+                android:gravity="center"
+                android:text="@string/successfully_applied"
+                android:textColor="@color/black"
+                android:textSize="17dp" />
+
+
+            <customfonts.TextView_Roboto_light
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:id="@+id/tvOrderMessage"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:layout_marginLeft="@dimen/dimen_10dp"
+                android:layout_marginRight="@dimen/dimen_10dp"
+                android:background="@color/bg_intro2"
+                android:layout_marginTop="@dimen/dimen_15dp"
+                android:text="Please save your loan application reference number : : IM-PL-1100"
+                android:textStyle="bold"
+                android:typeface="serif"
+                android:textColor="@color/white"
+                android:textSize="20dp" />
+
+
+
+
+
+            <customfonts.TextView_Roboto_light
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/dimen_20dp"
+                android:layout_marginLeft="@dimen/dimen_5dp"
+                android:layout_marginRight="@dimen/dimen_5dp"
+                android:gravity="center"
+                android:text="@string/call_from_customer"
+                android:textColor="@color/black"
+                android:textSize="17dp" />
+
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/dimen_50dp"
+                android:visibility="gone"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="6dp">
+
+                    <customfonts.TextView_Roboto_regular
+                        android:layout_width="220dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:gravity="left"
+                        android:text="Order Id -"
+                        android:textColor="@color/medium_text"
+                        android:textSize="@dimen/dimen_18sp" />
+
+                    <customfonts.TextView_Roboto_regular
+                        android:id="@+id/tvOrderId"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:gravity="center"
+                        android:text="AD105"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/dimen_18sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="6dp">
+
+                    <customfonts.TextView_Roboto_regular
+                        android:layout_width="220dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:text="Loan amount -"
+                        android:textColor="@color/medium_text"
+                        android:textSize="@dimen/dimen_18sp" />
+
+                    <customfonts.TextView_Roboto_regular
+                        android:id="@+id/tvAmount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:gravity="center"
+                        android:text="Rs. 40,000"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/dimen_18sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="6dp">
+
+                    <customfonts.TextView_Roboto_regular
+                        android:layout_width="220dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:text="Disbursed amount -"
+                        android:textColor="@color/medium_text"
+                        android:textSize="@dimen/dimen_18sp" />
+
+
+                    <customfonts.TextView_Roboto_regular
+                        android:id="@+id/tvPayableAmount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:gravity="center"
+                        android:text="Rs. 40,000"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/dimen_18sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="6dp">
+
+                    <customfonts.TextView_Roboto_regular
+                        android:layout_width="220dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:text="Repayment amount -"
+                        android:textColor="@color/medium_text"
+                        android:textSize="@dimen/dimen_18sp" />
+
+
+                    <customfonts.TextView_Roboto_regular
+                        android:id="@+id/tvRepayAmount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:gravity="center"
+                        android:text="Rs. 40,000"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/dimen_18sp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+    <customfonts.TextView_Roboto_regular
+        android:id="@+id/tvDone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/corner_button_background"
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="?attr/selectableItemBackground"
+        android:gravity="center"
+        android:padding="16dp"
+        android:text="DONE"
+        android:textColor="@color/white"
+        android:textSize="@dimen/dimen_15sp" />
+
+
+</RelativeLayout>

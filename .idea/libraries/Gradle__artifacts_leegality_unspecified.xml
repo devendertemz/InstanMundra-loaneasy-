@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: artifacts:leegality:unspecified">
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/leegality/build/.transforms/c87f901d5f49fd8c04844a6d57d88724/jetified-leegality/res" />
+      <root url="jar://$PROJECT_DIR$/leegality/build/.transforms/c87f901d5f49fd8c04844a6d57d88724/jetified-leegality/jars/classes.jar!/" />
+      <root url="file://$PROJECT_DIR$/leegality/build/.transforms/c87f901d5f49fd8c04844a6d57d88724/jetified-leegality/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

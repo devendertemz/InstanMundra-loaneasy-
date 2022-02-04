@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_200"
+    android:orientation="vertical"
+    tools:context=".NotificationsActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarCompl"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_marginBottom="@dimen/dimen_5dp"
+        android:background="?attr/colorPrimary"
+        android:elevation="@dimen/dimen_3dp"
+        app:popupTheme="@style/AppTheme.PopupOverlay"
+        tools:targetApi="lollipop">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/ivBack"
+                android:layout_width="@dimen/dimen_30dp"
+                android:layout_height="@dimen/dimen_30dp"
+                android:layout_centerVertical="true"
+                android:clickable="true"
+                android:foreground="?attr/selectableItemBackground"
+                android:padding="@dimen/dimen_6dp"
+                app:srcCompat="@drawable/ic_back_white" />
+
+            <customfonts.TextView_Roboto_regular
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dimen_25dp"
+                android:layout_toRightOf="@id/ivBack"
+                android:text="Notifications"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+        </RelativeLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dimen_5dp"
+        app:cardCornerRadius="@dimen/dimen_5dp"
+        app:cardElevation="@dimen/dimen_4dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <customfonts.TextView_Roboto_regular
+                android:id="@+id/tvNotifHeader"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/gray_900"
+                android:textSize="@dimen/dimen_19sp"
+                android:layout_margin="@dimen/dimen_10dp" />
+
+            <customfonts.TextView_Roboto_regular
+                android:id="@+id/tvClear"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:paddingTop="@dimen/dimen_8dp"
+                android:paddingBottom="@dimen/dimen_8dp"
+                android:paddingLeft="@dimen/dimen_18dp"
+                android:paddingRight="@dimen/dimen_18dp"
+                android:layout_centerVertical="true"
+                android:text="Clear"
+                android:textSize="@dimen/dimen_18sp"
+                android:textColor="@color/colorAccent"
+                android:layout_marginRight="@dimen/dimen_10dp" />
+
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvNotif"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/dimen_10dp"
+        android:background="@color/gray_200"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/lyNoNotif"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_70dp"
+        android:orientation="vertical"
+        android:gravity="center"
+        >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/no_notifications_svg"
+            tools:ignore="VectorDrawableCompat" />
+
+        <customfonts.TextView_Roboto_regular
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_20dp"
+            android:text="No notifications found !"
+            android:textSize="@dimen/dimen_20sp"
+            android:textColor="@color/gray_800"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,18 @@
+<component name="libraryTable">
+  <library name="Gradle: com.irozon.sneaker:sneaker:2.0.0@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/8305be47e845329f7a573ab2c02b7fae/jetified-sneaker-2.0.0/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/8305be47e845329f7a573ab2c02b7fae/jetified-sneaker-2.0.0/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/8305be47e845329f7a573ab2c02b7fae/jetified-sneaker-2.0.0/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/9b0345a5b3f5bab30be9cd6576ea1d43/jetified-sneaker-2.0.0/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/9b0345a5b3f5bab30be9cd6576ea1d43/jetified-sneaker-2.0.0/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/9b0345a5b3f5bab30be9cd6576ea1d43/jetified-sneaker-2.0.0/res" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.irozon.sneaker/sneaker/2.0.0/a5af7180f587a362b4e2b73c7ec977963591d578/sneaker-2.0.0-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.irozon.sneaker/sneaker/2.0.0/9c9e7e694789bb562d0eff57da6135a2ef928405/sneaker-2.0.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

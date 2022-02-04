@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_light"
+    android:orientation="vertical"
+    tools:context="com.loaneasy.LoanCalculator">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Loan Amount"
+        android:textSize="30sp"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:fontFamily="serif-monospace"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        />
+
+    <TextView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="I need loan in INR"
+        android:gravity="center"
+        android:textSize="17sp"
+        android:layout_marginTop="50dp"
+        android:fontFamily="sans-serif"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+         >
+    </TextView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2"
+        android:layout_marginTop="25dp"
+        android:orientation="horizontal">
+
+        <SeekBar
+            android:id="@+id/PRICEseekBarID"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.5"
+            android:layout_below="@+id/PRICEtextViewProgressID"
+            android:max="100000" >
+        </SeekBar>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="500"
+            android:id="@+id/tvAmount"
+            android:textSize="17sp"
+            android:fontFamily="serif-monospace"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_weight=".5"/>
+    </LinearLayout>
+
+
+    <TextView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="When you are going to return?"
+        android:gravity="center"
+        android:textSize="17sp"
+        android:layout_marginTop="50dp"
+        android:fontFamily="sans-serif"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        >
+    </TextView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2"
+        android:layout_marginTop="25dp"
+        android:orientation="horizontal">
+
+        <SeekBar
+            android:id="@+id/sbDays"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.5"
+            android:layout_below="@+id/PRICEtextViewProgressID"
+            android:max="90" >
+        </SeekBar>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="500"
+            android:id="@+id/tvSetDays"
+            android:textSize="17sp"
+            android:fontFamily="serif-monospace"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_weight=".5"/>
+    </LinearLayout>
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:fontFamily="serif-monospace"
+        android:textColor="@color/black"
+        android:textSize="17sp"
+        android:gravity="center"
+        android:id="@+id/tvRePayment"
+        android:textStyle="bold"
+        />
+
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="17sp"
+        android:id="@+id/btConfirmLoan"
+        android:text="Apply For Loan"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/corner_button_background"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginBottom="5dp"
+        />
+
+
+
+
+
+
+
+
+
+
+
+</LinearLayout>

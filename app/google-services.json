@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "777765884263",
+    "project_id": "instantloan-f7d33",
+    "storage_bucket": "instantloan-f7d33.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:777765884263:android:06162e4a7fb90824e7dfc2",
+        "android_client_info": {
+          "package_name": "com.loaneasy"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "777765884263-v6su4cplphfc07mpap808g4sk7kabpb3.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.loaneasy",
+            "certificate_hash": "0dca05b099a5e2c632d8184b7cf36203ddaa5eb9"
+          }
+        },
+        {
+          "client_id": "777765884263-faeb4ka8cdten00u29g6qa3tb61l3fnl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDbAGT6Wc2fWzHDaYiMx2c-LShFZ7pekrY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "777765884263-faeb4ka8cdten00u29g6qa3tb61l3fnl.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

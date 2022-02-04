@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#da0524</color>
+    <color name="colorPrimaryDark">#9f041b</color>
+    <color name="colorAccent">#7b4397</color>
+
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="dark_grey">#808080</color>
+    <color name="gray_light">#939393</color>
+    <color name="intro_text">#F8BC61</color>
+    <color name="intro_text2">#f9a82d</color>
+    <color name="carmine">#9f041b</color>
+    <color name="carmine_light">#d46d7c</color>
+
+    <color name="gray_50">#FAFAFA</color>
+    <color name="gray_100">#F5F5F5</color>
+    <color name="gray_200">#EEEEEE</color>
+    <color name="gray_300">#E0E0E0</color>
+    <color name="gray_400">#BDBDBD</color>
+    <color name="gray_500">#9E9E9E</color>
+    <color name="gray_600">#757575</color>
+    <color name="gray_700">#616161</color>
+    <color name="gray_800">#424242</color>
+    <color name="gray_900">#212121</color>
+
+    <color name="medium_text">#7e7e7e</color>
+    <color name="pressedColor">#a1a499</color>
+    <color name="light_grey">#fff3f3f3</color>
+    <color name="chrome_grey">#F2F2F2</color>
+    <color name="green">#4CAF50</color>
+    <color name="textGreen">#4DAF51</color>
+    <color name="redText">#d3d62e42</color>
+    <color name="dark_red">#d60c0f</color>
+    <color name="colorTex">#585858</color>
+    <color name="color_progress">#ff3737</color>
+    <color name="black_transparent">#30000000</color>
+
+
+
+    <!-- Screens background color-->
+    <color name="bg_screen1">#f64c73</color>
+    <color name="bg_screen2">#20d2bb</color>
+    <color name="bg_screen3">#3395ff</color>
+    <color name="bg_screen4">#c873f4</color>
+
+    <color name="bg_intro1">#512DA8</color>
+    <color name="bg_intro2">#00C853</color>
+    <color name="bg_intro3">#FB8C00</color>
+    <color name="bg_intro4">#D32F2F</color>
+
+    <!-- dots inactive colors -->
+    <color name="dot_dark_screen1">#f27353</color>
+    <color name="dot_dark_screen2">#f27353</color>
+    <color name="dot_dark_screen3">#f27353</color>
+    <color name="dot_dark_screen4">#f27353</color>
+
+    <!-- dots active colors -->
+    <color name="dot_light_screen1">#ffa89c</color>
+    <color name="dot_light_screen2">#ffa89c</color>
+    <color name="dot_light_screen3">#ffa89c</color>
+    <color name="dot_light_screen4">#ffa89c</color>
+
+    <array name="array_dot_active">
+        <item>@color/colorPrimaryDark</item>
+        <item>@color/colorPrimaryDark</item>
+        <item>@color/colorPrimaryDark</item>
+        <item>@color/colorPrimaryDark</item>
+    </array>
+
+    <array name="array_dot_inactive">
+        <item>@color/gray_400</item>
+        <item>@color/gray_400</item>
+        <item>@color/gray_400</item>
+        <item>@color/gray_400</item>
+    </array>
+</resources>

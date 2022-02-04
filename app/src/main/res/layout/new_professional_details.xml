@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dimen_10dp"
+        android:layout_marginRight="@dimen/dimen_10dp"
+        android:layout_marginTop="@dimen/dimen_75dp"
+        android:orientation="vertical"
+        android:padding="@dimen/dimen_5dp"
+        app:cardCornerRadius="@dimen/dimen_10dp" >
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_10dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textSize="@dimen/dimen_20sp"
+                android:textColor="@color/black"
+                android:text="Company Details" />
+
+
+            <EditText
+                android:layout_marginTop="@dimen/dimen_15dp"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_35dp"
+                android:layout_marginLeft="5dp"
+                android:id="@+id/etCompanyName"
+                android:layout_marginRight="5dp"
+                android:inputType="textCapCharacters"
+                android:maxLength="100"
+                android:textCursorDrawable="@drawable/color_cursor"
+                android:background="@drawable/shape_rect_bckground_gray"
+                android:paddingLeft="5dp"
+                android:hint="Company Name"/>
+
+
+
+            <EditText
+                android:layout_marginTop="@dimen/dimen_15dp"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_50dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:inputType="textCapCharacters"
+                android:id="@+id/etCompanyAddress"
+                android:maxLength="255"
+                android:textCursorDrawable="@drawable/color_cursor"
+                android:background="@drawable/shape_rect_bckground_gray"
+                android:paddingLeft="5dp"
+                android:hint="Company Address"/>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="2"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:layout_marginTop="@dimen/dimen_15dp"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="@dimen/dimen_35dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:inputType="number"
+                    android:maxLength="9"
+                    android:id="@+id/etSalary"
+                    android:textCursorDrawable="@drawable/color_cursor"
+                    android:background="@drawable/shape_rect_bckground_gray"
+                    android:paddingLeft="5dp"
+                    android:hint="Salary"/>
+
+
+                <androidx.appcompat.widget.AppCompatSpinner
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_gravity="bottom"
+                    android:id="@+id/spWorkingYears"
+                    android:layout_marginRight="@dimen/dimen_5dp"
+                    android:layout_marginLeft="@dimen/dimen_5dp"
+                    android:dropDownVerticalOffset="50dp"
+                    android:spinnerMode="dropdown"
+                    app:backgroundTint="@color/carmine"
+                    />
+
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_15dp"
+                android:layout_marginLeft="@dimen/dimen_5dp"
+                android:layout_weight="1"
+                android:textSize="@dimen/dimen_17sp"
+                android:textColor="@color/carmine"
+                android:text="Please Upload your 2 references"
+                />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_10dp"
+                android:orientation="horizontal"
+                android:weightSum="4">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.5"
+                    android:id="@+id/tvPickReference1"
+                    android:layout_marginRight="@dimen/dimen_5dp"
+                    android:layout_marginLeft="@dimen/dimen_5dp"
+                    android:text="Reference 1"
+                    android:textStyle="bold"
+                    android:drawableLeft="@drawable/pick_contact"
+                    android:gravity="center_vertical"
+                    android:drawablePadding="@dimen/dimen_5dp"
+                    android:textColor="@color/gray_800"
+                    android:textColorHint="@color/gray_700"
+                    android:textSize="@dimen/dimen_17sp"
+                    />
+
+
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2.5"
+                    android:paddingLeft="@dimen/dimen_5dp"
+                    android:id="@+id/tvReferenceName1"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:textCursorDrawable="@drawable/color_cursor"
+                    android:background="@drawable/shape_rect_bckground_gray"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_15dp"
+                android:orientation="horizontal"
+                android:weightSum="4">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.5"
+                    android:id="@+id/tvPickReference2"
+                    android:layout_marginRight="@dimen/dimen_5dp"
+                    android:layout_marginLeft="@dimen/dimen_5dp"
+                    android:text="Reference 2"
+                    android:textStyle="bold"
+                    android:drawableLeft="@drawable/pick_contact"
+                    android:gravity="center_vertical"
+                    android:drawablePadding="@dimen/dimen_5dp"
+                    android:textColor="@color/gray_800"
+                    android:textColorHint="@color/gray_700"
+                    android:textSize="@dimen/dimen_17sp"
+                    />
+
+
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2.5"
+                    android:paddingLeft="@dimen/dimen_5dp"
+                    android:id="@+id/tvReferenceName2"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:textCursorDrawable="@drawable/color_cursor"
+                    android:background="@drawable/shape_rect_bckground_gray"/>
+
+            </LinearLayout>
+
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/dimen_5dp"
+                android:layout_marginLeft="@dimen/dimen_5dp"
+                android:layout_marginBottom="@dimen/dimen_10dp"
+                android:background="@drawable/corner_button_background"
+                android:layout_marginTop="@dimen/dimen_25dp"
+                android:gravity="center"
+                android:id="@+id/btSubmitUserDetails"
+                android:text="Submit"
+                android:textColor="@color/white"
+                android:textSize="@dimen/dimen_20sp"
+                />
+
+
+
+
+
+
+
+        </LinearLayout>
+
+
+        </ScrollView>
+    </androidx.cardview.widget.CardView>
+
+
+
+
+    <ImageView
+        android:id="@+id/ivbg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/phone_bg" />
+
+
+
+</FrameLayout>

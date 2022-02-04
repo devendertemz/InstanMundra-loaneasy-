@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/paynimo_view_rounded_corner"
+    android:orientation="vertical" >
+
+    <View
+        android:id="@+id/paynimo_view_top"
+        android:layout_width="100dp"
+        android:layout_height="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_alignParentTop="true"
+        android:layout_gravity="center"
+        android:background="#d3d3d3"/>
+
+    <com.paynimo.android.payment.CustomTextView
+        android:id="@+id/paynimo_text_view_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="@color/defaultTextColor"
+        android:text="This is sample text"
+        android:visibility="gone"/>
+    <com.paynimo.android.payment.CustomEditText
+        android:id="@+id/paynimo_custom_dialog_text"
+        style="@style/EditTextPaynimo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:padding="8dp"
+        android:inputType="number"
+        android:hint="Enter OTP"
+        android:maxLength="7"/>
+
+    <LinearLayout
+        android:id="@+id/dialog_button_top_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:paddingBottom="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp" >
+
+        <com.paynimo.android.payment.CustomButton
+            android:id="@+id/paynimo_custom_dialog_ButtonOK"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:layout_margin="8dp"
+            android:background="@drawable/paynimo_button_background"
+            android:text="@string/paynimo_custom_dialog_ok_label"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/paynimo_radioButton_textSize" />
+
+        <com.paynimo.android.payment.CustomButton
+            android:id="@+id/paynimo_custom_dialog_ButtonCancel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:layout_weight="0.5"
+            android:background="@drawable/paynimo_button_background"
+            android:text="@string/paynimo_custom_dialog_cancel_label"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/paynimo_radioButton_textSize" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/dialog_button_bottom_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:paddingBottom="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp" >
+
+        <com.paynimo.android.payment.CustomButton
+            android:id="@+id/paynimo_custom_dialog_ButtonResend"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:layout_weight="0.5"
+            android:background="@drawable/paynimo_button_background"
+            android:text="@string/paynimo_custom_dialog_resend_label"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/paynimo_radioButton_textSize" />
+        <com.paynimo.android.payment.CustomButton
+            android:id="@+id/paynimo_custom_dialog_ButtonClear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:layout_margin="8dp"
+            android:background="@drawable/paynimo_button_background"
+            android:text="@string/paynimo_custom_dialog_clear_label"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/paynimo_radioButton_textSize" />
+
+    </LinearLayout>
+
+</LinearLayout>

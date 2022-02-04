@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".DrawerItems.ContactUsActivity">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/dimen_12dp"
+        android:elevation="@dimen/dimen_4dp">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <customfonts.MyTextView_Roboto_Medium
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dimen_8dp"
+                    android:layout_marginRight="@dimen/dimen_5dp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="@dimen/dimen_20dp"
+                    android:layout_marginBottom="@dimen/dimen_20dp"
+                    android:text="Contact Us"
+                    android:gravity="center"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/dimen_22dp"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/gray_600"
+                    android:layout_marginLeft="@dimen/dimen_15dp"
+                    android:layout_marginRight="@dimen/dimen_15dp"
+                    />
+
+
+
+                <customfonts.TextView_Roboto_regular
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dimen_8dp"
+                    android:layout_marginRight="@dimen/dimen_5dp"
+                    android:layout_marginTop="@dimen/dimen_20dp"
+                    android:typeface="sans"
+                    android:textStyle="bold"
+                    android:text="If you have encounter a problem or you have entered wrong data,so please feel free to ask any question"
+                    android:textColor="@color/gray_800"
+                    android:textSize="@dimen/dimen_15sp"/>
+
+
+                <ImageView
+                    android:layout_margin="@dimen/dimen_8dp"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/customer_care"
+                    />
+
+
+
+                <LinearLayout
+                    android:padding="@dimen/dimen_8dp"
+                    android:layout_gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/dimen_10dp"
+                    android:layout_marginTop="100dp"
+                    android:orientation="horizontal">
+
+
+                    <ImageView
+                        android:layout_width="@dimen/dimen_30dp"
+                        android:layout_height="@dimen/dimen_30dp"
+                        app:srcCompat="@drawable/icon_phone_50"/>
+
+
+                    <customfonts.TextView_Roboto_light
+                        android:id="@+id/call1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="+91 - 7290077011"
+                        android:layout_marginLeft="@dimen/dimen_10dp"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/dimen_18dp" />
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:padding="@dimen/dimen_8dp"
+                    android:layout_gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dimen_10dp"
+                    android:layout_marginRight="@dimen/dimen_10dp"
+                    android:orientation="horizontal">
+
+
+                    <ImageView
+                        android:layout_width="@dimen/dimen_30dp"
+                        android:layout_height="@dimen/dimen_30dp"
+                        app:srcCompat="@drawable/icon_phone_50"/>
+
+                    <customfonts.TextView_Roboto_light
+
+                        android:id="@+id/call2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="+91 - 8448863608"
+                        android:layout_marginLeft="@dimen/dimen_10dp"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/dimen_18dp" />
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:padding="@dimen/dimen_8dp"
+                    android:layout_gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dimen_10dp"
+                    android:layout_marginRight="@dimen/dimen_10dp"
+
+                    android:orientation="horizontal">
+
+
+                    <ImageView
+                        android:layout_width="@dimen/dimen_30dp"
+                        android:layout_height="@dimen/dimen_30dp"
+                        app:srcCompat="@drawable/icon_eamil_50"/>
+
+                    <customfonts.TextView_Roboto_light
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="hello@instantmudra.com"
+                        android:layout_marginLeft="@dimen/dimen_10dp"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/dimen_18dp" />
+
+
+                </LinearLayout>
+
+
+
+
+
+                <customfonts.TextView_Roboto_light
+                    android:layout_marginTop="@dimen/dimen_20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_gravity="center"
+                    android:text="(we are available mon-sat from 10 AM - 7 PM)"
+                    android:textColor="@color/black"
+                    android:textStyle="italic"
+                    android:textSize="@dimen/dimen_15dp" />
+
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </androidx.cardview.widget.CardView>
+
+
+
+    <customfonts.TextView_Roboto_regular
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_20sp"
+        android:textColor="@color/colorTex"
+        android:textSize="18sp"
+        android:layout_marginLeft="@dimen/dimen_10dp"
+        android:text="Phone No:" />
+
+
+
+
+
+
+</LinearLayout>

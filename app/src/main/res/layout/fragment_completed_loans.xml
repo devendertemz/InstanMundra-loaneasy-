@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/containerLoans"
+    android:layout_height="match_parent"
+    android:background="@drawable/grad_active_loans"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".DrawerItems.AppliedLoansActivity">
+
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvCompletedLoans"
+        android:visibility="gone"
+        android:layout_marginLeft="@dimen/dimen_5dp"
+        android:layout_marginRight="@dimen/dimen_5dp"
+        android:layout_marginTop="@dimen/dimen_10dp"
+        android:layout_marginBottom="@dimen/dimen_10dp"
+        android:background="@android:color/transparent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvNoLoan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_marginTop="@dimen/dimen_20dp"
+        android:layout_marginRight="@dimen/dimen_25dp"
+        android:layout_marginLeft="@dimen/dimen_25dp"
+        app:cardCornerRadius="@dimen/dimen_10dp"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="@dimen/dimen_10dp"
+                android:layout_marginRight="@dimen/dimen_10dp"
+                android:layout_marginTop="@dimen/dimen_20dp"
+                android:layout_marginBottom="@dimen/dimen_5dp"
+                app:srcCompat="@drawable/loannotfound_svg"
+                tools:ignore="VectorDrawableCompat" />
+
+            <customfonts.TextView_Roboto_regularcondensed
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_20dp"
+                android:layout_marginBottom="@dimen/dimen_20dp"
+                android:gravity="center"
+                android:textSize="@dimen/dimen_18sp"
+                android:textColor="@color/gray_800"
+                android:text="No Completed loan found!"/>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

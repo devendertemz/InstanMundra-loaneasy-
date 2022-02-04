@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="7">
+
+    <FrameLayout
+        android:id="@+id/rlimage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/ivbg"
+            android:layout_width="match_parent"
+            android:layout_height="320dp"
+            android:layout_alignParentTop="true"
+            android:scaleType="fitStart"
+            app:srcCompat="@drawable/phone_bg" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:layout_marginRight="@dimen/dimen_10dp"
+            android:layout_marginBottom="@dimen/dimen_30dp"
+            app:srcCompat="@drawable/icon_social" />
+
+    </FrameLayout>
+
+    <customfonts.MyTextView_Roboto_Medium
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rlimage"
+        android:layout_marginTop="20dp"
+        android:fontFamily="serif"
+        android:gravity="center"
+        android:text="SOCIAL LOGIN"
+        android:textColor="@color/gray_800"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/dimen_20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/do_google"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/rect_light_blue"
+            android:drawableLeft="@drawable/ic_google"
+            android:gravity="center|center_vertical"
+            android:onClick="OnGoogleLogin"
+            android:paddingStart="20dp"
+            android:text="Login With Google"
+            android:textColor="#474747"
+            android:textSize="14sp"
+            android:textStyle="bold"
+
+            />
+        <com.facebook.login.widget.LoginButton
+            android:id="@+id/login_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="4dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/rect_light_blue"
+            android:visibility="gone" />
+
+
+
+
+
+        <TextView
+            android:id="@+id/do_facebook"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="@dimen/dimen_50dp"
+            android:background="@drawable/rect_light_blue"
+            android:drawableLeft="@drawable/ic_facebook"
+            android:gravity="center|center_vertical"
+            android:onClick="OnFbLogin"
+            android:paddingStart="20dp"
+            android:text="Login With Facebook"
+            android:textColor="#474747"
+            android:textSize="14sp"
+
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+</LinearLayout>

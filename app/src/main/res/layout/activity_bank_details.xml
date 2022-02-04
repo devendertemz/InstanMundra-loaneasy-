@@ -1,0 +1,374 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_100"
+    android:orientation="vertical"
+    tools:context=".BankDetailsActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarBankDetails"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/ivBack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                app:srcCompat="@drawable/go_back_left_arrow" />
+
+            <customfonts.TextView_Roboto_regular
+                android:id="@+id/tv_toolbar_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dimen_25dp"
+                android:layout_toRightOf="@id/ivBack"
+                android:text="Mandatory details"
+                android:textColor="@color/white"
+                android:textSize="@dimen/dimen_20sp" />
+
+
+
+
+        </RelativeLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/lyBottom"
+            android:layout_marginTop="@dimen/dimen_15dp"
+            android:fadeScrollbars="false"
+            android:scrollbars="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:id="@+id/ly1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:elevation="@dimen/dimen_4dp"
+                    android:background="@color/white"
+                    android:orientation="vertical">
+
+
+
+                    <TextView
+                        android:id="@+id/tvUploadStatmnt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginRight="30dp"
+                        android:layout_marginTop="20dp"
+                        android:background="@drawable/shape_button_background"
+                        android:gravity="center"
+                        android:padding="13dp"
+                        android:text="@string/upload_bank_statement"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="16sp" />
+
+
+                    <customfonts.EditText_Roboto_Regular
+                        android:id="@+id/etBankStatementPin"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawablePadding="@dimen/dimen_5dp"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:inputType="text"
+                        android:maxLength="20"
+                        android:maxLines="1"
+                        android:hint="Enter Statement Pin"
+                        android:textSize="@dimen/dimen_17sp"
+                        android:layout_marginLeft="@dimen/dimen_30dp"
+                        android:layout_marginRight="@dimen/dimen_30dp"
+                        android:layout_marginTop="@dimen/dimen_10dp"
+                        android:textColor="@color/black"
+                        android:textColorHighlight="@color/gray_600"
+                        android:theme="@style/ThemeEditText"/>
+
+                    <TextView
+                        android:id="@+id/tvUploadSlip1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/dimen_15dp"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginRight="30dp"
+                        android:layout_marginTop="20dp"
+                        android:background="@drawable/shape_button_background"
+                        android:gravity="center"
+                        android:padding="13dp"
+                        android:text="@string/upload_salary_slip1"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="16sp" />
+
+
+                    <TextView
+                        android:id="@+id/tvUploadSlip2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/dimen_15dp"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginRight="30dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/shape_button_background"
+                        android:gravity="center"
+                        android:padding="13dp"
+                        android:text="@string/upload_salary_slip2"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/tvUploadSlip3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/dimen_15dp"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginRight="30dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/shape_button_background"
+                        android:gravity="center"
+                        android:padding="13dp"
+                        android:text="@string/upload_salary_slip3"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="16sp" />
+
+                </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/ly1"
+                        android:visibility="gone"
+                        android:elevation="@dimen/dimen_4dp"
+                        android:layout_marginBottom="@dimen/dimen_15dp"
+                        android:layout_marginTop="@dimen/dimen_15dp"
+                        android:background="@color/white"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="@dimen/dimen_15dp"
+                            android:orientation="horizontal">
+
+                            <customfonts.TextView_Roboto_regular
+                                android:id="@+id/tv1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginRight="@dimen/dimen_20dp"
+                                android:text="Loan amount        - "
+                                android:textColor="@color/gray_700"
+                                android:textSize="@dimen/dimen_15sp" />
+
+                            <ImageView
+                                android:layout_width="12dp"
+                                android:layout_height="12dp"
+                                android:layout_centerVertical="true"
+                                android:layout_marginRight="@dimen/dimen_4dp"
+                                android:layout_toLeftOf="@id/tvLoanAmount"
+                                app:srcCompat="@drawable/ic_rupee_gray" />
+
+                            <customfonts.TextView_Roboto_regular
+                                android:id="@+id/tvLoanAmount"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_marginRight="@dimen/dimen_25dp"
+                                android:text="8544"
+                                android:textColor="@color/gray_800"
+                                android:textSize="@dimen/dimen_15sp" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="@dimen/dimen_15dp"
+                            android:orientation="horizontal">
+
+                            <customfonts.TextView_Roboto_regular
+                                android:id="@+id/tv2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginRight="@dimen/dimen_20dp"
+                                android:text="Total interest        - "
+                                android:textColor="@color/gray_700"
+                                android:textSize="@dimen/dimen_15sp" />
+
+                            <ImageView
+                                android:layout_width="12dp"
+                                android:layout_height="12dp"
+                                android:layout_centerVertical="true"
+                                android:layout_marginRight="@dimen/dimen_4dp"
+                                android:layout_toLeftOf="@id/tvTotalInterest"
+                                app:srcCompat="@drawable/ic_rupee_gray" />
+
+                            <customfonts.TextView_Roboto_regular
+                                android:id="@+id/tvTotalInterest"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_marginRight="@dimen/dimen_25dp"
+                                android:text="8544"
+                                android:textColor="@color/gray_800"
+                                android:textSize="@dimen/dimen_15sp" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginBottom="@dimen/dimen_15dp"
+                            android:layout_marginTop="@dimen/dimen_15dp"
+                            android:orientation="horizontal">
+
+                            <customfonts.TextView_Roboto_regular
+                                android:id="@+id/tv3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginRight="@dimen/dimen_20dp"
+                                android:text="File handling charge        - "
+                                android:textColor="@color/gray_700"
+                                android:textSize="@dimen/dimen_15sp" />
+
+                            <ImageView
+                                android:layout_width="12dp"
+                                android:layout_height="12dp"
+                                android:layout_centerVertical="true"
+                                android:layout_marginTop="@dimen/dimen_4dp"
+                                android:layout_marginRight="@dimen/dimen_4dp"
+                                android:layout_toLeftOf="@id/tvHandlingCharge"
+                                app:srcCompat="@drawable/ic_rupee_gray" />
+
+                            <customfonts.TextView_Roboto_regular
+                                android:id="@+id/tvHandlingCharge"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_marginRight="@dimen/dimen_25dp"
+                                android:text="200"
+                                android:textColor="@color/gray_800"
+                                android:textSize="@dimen/dimen_15sp" />
+                        </RelativeLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height=".5dp"
+                            android:layout_marginLeft="@dimen/dimen_5dp"
+                            android:layout_marginRight="@dimen/dimen_5dp"
+                            android:background="@color/gray_700" />
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginBottom="@dimen/dimen_15dp"
+                            android:layout_marginTop="@dimen/dimen_15dp"
+                            android:orientation="horizontal">
+
+                            <customfonts.TextView_Bold
+                                android:id="@+id/tv4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginRight="@dimen/dimen_20dp"
+                                android:text="Total amount        - "
+                                android:textColor="@color/gray_700"
+                                android:textSize="@dimen/dimen_15sp" />
+
+                            <ImageView
+                                android:layout_width="12dp"
+                                android:layout_height="12dp"
+                                android:layout_centerVertical="true"
+                                android:layout_marginRight="@dimen/dimen_4dp"
+                                android:layout_toLeftOf="@id/tvTotalAmount"
+                                app:srcCompat="@drawable/ic_rupee_black" />
+
+                            <customfonts.TextView_Bold
+                                android:id="@+id/tvTotalAmount"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_marginRight="@dimen/dimen_25dp"
+                                android:text="8544 "
+                                android:textColor="@color/gray_800"
+                                android:textSize="@dimen/dimen_15sp"
+                                android:textStyle="bold" />
+                        </RelativeLayout>
+
+
+                    </LinearLayout>
+
+            </RelativeLayout>
+        </ScrollView>
+
+
+        <LinearLayout
+            android:id="@+id/lyBottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="2"
+            android:orientation="horizontal"
+            android:layout_alignParentBottom="true">
+
+            <Button
+                android:id="@+id/btSubmitLater"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:foreground="?attr/selectableItemBackground"
+                android:clickable="true"
+                android:visibility="gone"
+                android:background="@drawable/corner_button_background"
+                android:text="Upload Later"
+                android:textAllCaps="false"
+                android:textColor="#FFFFFF"
+                android:textSize="17sp"
+                android:focusable="true" />
+
+
+            <Button
+                android:id="@+id/btSubmitDetails"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:foreground="?attr/selectableItemBackground"
+                android:clickable="true"
+                android:layout_weight="1"
+                android:background="@drawable/corner_button_background"
+                android:text="Submit"
+                android:textAllCaps="false"
+                android:textColor="#FFFFFF"
+                android:textSize="17sp"
+                android:focusable="true" />
+
+
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</LinearLayout>

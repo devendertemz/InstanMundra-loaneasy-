@@ -1,0 +1,21 @@
+<component name="libraryTable">
+  <library name="Gradle: com.vincent.filepicker:MultiTypeFilePicker:1.0.8@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/91a85d615ac4ba4162e93a00882b634c/jetified-MultiTypeFilePicker-1.0.8/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/91a85d615ac4ba4162e93a00882b634c/jetified-MultiTypeFilePicker-1.0.8/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/91a85d615ac4ba4162e93a00882b634c/jetified-MultiTypeFilePicker-1.0.8/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/756607780e2572826c84d00d92c449fc/jetified-MultiTypeFilePicker-1.0.8/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/756607780e2572826c84d00d92c449fc/jetified-MultiTypeFilePicker-1.0.8/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/756607780e2572826c84d00d92c449fc/jetified-MultiTypeFilePicker-1.0.8/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/ab37db4e7266a387c356c81d48e2bad4/jetified-MultiTypeFilePicker-1.0.8/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/ab37db4e7266a387c356c81d48e2bad4/jetified-MultiTypeFilePicker-1.0.8/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/ab37db4e7266a387c356c81d48e2bad4/jetified-MultiTypeFilePicker-1.0.8/res" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.vincent.filepicker/MultiTypeFilePicker/1.0.8/1d033a94b5d9c007462458b13827a76b7eb0d93d/MultiTypeFilePicker-1.0.8-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.vincent.filepicker/MultiTypeFilePicker/1.0.8/d1d8d7c29f8a3fff6ea49dae935476ed44716b71/MultiTypeFilePicker-1.0.8-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

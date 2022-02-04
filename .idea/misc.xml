@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/webmango/instantloan/app/src/main/res/drawable/corner_button_background.xml" value="0.1485" />
+        <entry key="..\:/webmango/instantloan/app/src/main/res/drawable/ic_facebook.xml" value="0.1485" />
+        <entry key="..\:/webmango/instantloan/app/src/main/res/drawable/ic_google.xml" value="0.1485" />
+        <entry key="..\:/webmango/instantloan/app/src/main/res/drawable/rect_light_blue.xml" value="0.163" />
+        <entry key="..\:/webmango/instantloan/app/src/main/res/layout/activity_emandate.xml" value="0.20416666666666666" />
+        <entry key="..\:/webmango/instantloan/app/src/main/res/layout/activity_forget_password.xml" value="0.33" />
+        <entry key="..\:/webmango/instantloan/app/src/main/res/layout/activity_home.xml" value="0.1515625" />
+        <entry key="..\:/webmango/instantloan/app/src/main/res/layout/activity_login.xml" value="0.2" />
+        <entry key="..\:/webmango/instantloan/app/src/main/res/layout/activity_phoneno.xml" value="0.15416666666666667" />
+        <entry key="..\:/webmango/instantloan/app/src/main/res/layout/activity_sign_up.xml" value="0.22" />
+        <entry key="..\:/webmango/instantloan/app/src/main/res/layout/activity_social_media_login.xml" value="0.15364583333333334" />
+        <entry key="..\:/webmango/instantloan/app/src/main/res/layout/activity_update_password.xml" value="0.18" />
+        <entry key="..\:/webmango/instantloan/app/src/main/res/layout/activity_verify_otp.xml" value="0.15364583333333334" />
+        <entry key="..\:/webmango/instantloan/app/src/main/res/layout/custom_dialog.xml" value="0.18854166666666666" />
+        <entry key="..\:/webmango/instantloan/app/src/main/res/layout/fragment_navigation_drawer.xml" value="0.14895833333333333" />
+        <entry key="..\:/webmango/instantloan/app/src/main/res/layout/new_personal_details.xml" value="0.18854166666666666" />
+        <entry key="..\:/webmango/instantloan/app/src/main/res/layout/new_professional_details.xml" value="0.18854166666666666" />
+        <entry key="..\:/webmango/instantloan/app/src/main/res/layout/upload_user_files.xml" value="0.20416666666666666" />
+        <entry key="..\:/work_space/instantloan/app/src/main/res/layout/activity_bank_details.xml" value="0.22192028985507245" />
+        <entry key="..\:/work_space/instantloan/app/src/main/res/layout/activity_bank_details_new.xml" value="0.1947463768115942" />
+        <entry key="..\:/work_space/instantloan/app/src/main/res/layout/activity_emandate.xml" value="0.12360688956433637" />
+        <entry key="..\:/work_space/instantloan/app/src/main/res/layout/activity_home.xml" value="0.12360688956433637" />
+        <entry key="..\:/work_space/instantloan/app/src/main/res/layout/apply_loan.xml" value="0.21693840579710144" />
+        <entry key="..\:/work_space/instantloan/app/src/main/res/layout/dialog_yourcity.xml" value="0.2115036231884058" />
+        <entry key="..\:/work_space/instantloan/app/src/main/res/layout/fragment_bank_details.xml" value="0.1947463768115942" />
+        <entry key="..\:/work_space/instantloan/app/src/main/res/layout/loan_status.xml" value="0.264" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
