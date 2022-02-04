@@ -20,6 +20,10 @@ import com.android.volley.VolleyError;
 import com.android.volley.VolleyLog;
 import com.android.volley.toolbox.JsonObjectRequest;
 import com.android.volley.toolbox.Volley;
+import com.irozon.sneaker.Sneaker;
+import com.loaneasy.ViewPresenter.OTPVerifiyPresenter;
+import com.loaneasy.ViewPresenter.RegisterMandatePresenter;
+import com.loaneasy.new_user_details.UserProfile;
 import com.loaneasy.utils.UserSharedPreference;
 import com.loaneasy.utils.Utility;
 import com.paynimo.android.payment.PaymentActivity;
@@ -27,8 +31,10 @@ import com.paynimo.android.payment.PaymentModesActivity;
 import com.paynimo.android.payment.model.Checkout;
 import com.paynimo.android.payment.util.Constant;
 
+import org.json.JSONException;
 import org.json.JSONObject;
 
+import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
@@ -36,10 +42,12 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Random;
 
+import okhttp3.ResponseBody;
+
 /**
  * Created by Ravindra on 26-Mar-19.
  */
-public class RegisterMandate extends AppCompatActivity {
+public class RegisterMandate extends AppCompatActivity implements RegisterMandatePresenter.UserLoginView {
 
     private String TAG= "RegisterMandate";
     UserSharedPreference sharedPreference;
@@ -49,6 +57,10 @@ public class RegisterMandate extends AppCompatActivity {
     private boolean  mandateFlag = false;
     private String mandateResponse = "", transactionReference,transactionIdentifier;
 
+    String orderId;
+
+    Intent intent;
+    RegisterMandatePresenter presenter;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -57,10 +69,21 @@ public class RegisterMandate extends AppCompatActivity {
 
         sharedPreference = new UserSharedPreference(this);
 
+        presenter = new RegisterMandatePresenter(this);
+
+        intent = getIntent();
+        if (intent != null) {
+            orderId = intent.getStringExtra("orderId");
+            presenter.UpdateEnashRegamount(this,orderId);
+            Log.e("keyyyy", orderId );
+
+
+        }
+
         //ifMandate();
         //registerMandate();
         
-        getUserLoanDetails("12000");
+//        getUserLoanDetails("12000");
 
     }
 
@@ -814,6 +837,66 @@ public class RegisterMandate extends AppCompatActivity {
     }
 
 
+    @Override
+    public void onNewUserSignUpError(String message) {
+
+    }
+
+    @Override
+    public void UpdateEnashRegamountSucess(ResponseBody responseBody, String message) {
+
+        String response=null,status = null,msg = null;
+        JSONObject jsonObject ;
+        String orderidd;
+
+        if (message.equalsIgnoreCase("ok")) {
+
+            try {
+                response = responseBody.string();
+                jsonObject = new JSONObject(response);
+                status = jsonObject.getString("status");
+
+                if (status.equalsIgnoreCase("true")) {
 
 
+                    orderidd=jsonObject.getString("enash_amount");
+                    Log.e("enash_amount",orderidd);
+
+
+                    getUserLoanDetails(orderidd);
+
+
+                    /*Intent intent = new Intent(getApplicationContext(), UserProfile.class);
+                    startActivity(intent);
+                    finish();*/
+
+
+
+
+
+                } else {
+                    Sneaker.with(this)
+                            .setTitle(msg)
+                            .setMessage("")
+                            .sneakError();
+
+                }
+            } catch (IOException | JSONException e) {
+                e.printStackTrace();
+            }
+
+
+        }
+
+    }
+
+    @Override
+    public void showHideProgress(boolean isShow) {
+
+    }
+
+    @Override
+    public void onNewUserSignUpFailure(Throwable t) {
+
+    }
 }

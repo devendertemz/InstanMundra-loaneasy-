@@ -93,6 +93,17 @@ public interface UserService {
 
     );
 
+
+    @FormUrlEncoded
+    @POST("admin/API/updateEnashRegamount")
+    Call<ResponseBody> UpdateEnashRegamount(
+            @Field("loan_reference_number") String loan_reference_number
+
+    );
+
+
+
+
     @POST("/admin/API/saveNewPassword")
     Call<ResponseBody> saveNewPassword(
             @Body UpdatePasswordRequest updatePasswordRequest

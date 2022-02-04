@@ -123,6 +123,7 @@ public class ForgetPasswordActivity extends AppCompatActivity implements ForgetP
                 {
 
                     Toast.makeText(ForgetPasswordActivity.this, msg + "", Toast.LENGTH_SHORT).show();
+
                     Intent in = new Intent(ForgetPasswordActivity.this, VerfiyOtpActivity.class);
 
                     in.putExtra("key", key);

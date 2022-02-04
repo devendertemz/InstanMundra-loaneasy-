@@ -45,7 +45,9 @@ import com.loaneasy.HomeActivity;
 import com.loaneasy.R;
 import com.loaneasy.ViewPresenter.ModalRepo.LoginRepo;
 import com.loaneasy.ViewPresenter.ModelReq.LoginRequest;
+import com.loaneasy.ViewPresenter.ModelReq.SignUpBody;
 import com.loaneasy.ViewPresenter.NewUserLoginPresenter;
+import com.loaneasy.ViewPresenter.NewUserSignUpPresenter;
 import com.loaneasy.login_signup.SocialMediaLogin;
 import com.loaneasy.new_user_details.UserProfile;
 import com.loaneasy.utils.UserSharedPreference;
@@ -74,7 +76,9 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-public class SocialMediaLoginn extends AppCompatActivity  implements  GoogleApiClient.OnConnectionFailedListener {
+import okhttp3.ResponseBody;
+
+public class SocialMediaLoginn extends AppCompatActivity  implements  GoogleApiClient.OnConnectionFailedListener  , NewUserSignUpPresenter.NewUserSignUpView {
 
 
 
@@ -89,15 +93,29 @@ public class SocialMediaLoginn extends AppCompatActivity  implements  GoogleApiC
     private static final String TAG = SocialMediaLogin.class.getSimpleName();
 
     private ArrayList<ContactListBeans> contactLists = new ArrayList<ContactListBeans>();
+    NewUserSignUpPresenter presenter;
 
+    Intent intent;
+    String Number;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_social_media_login2);
 
-
+        presenter=new NewUserSignUpPresenter(this);
         sharedPreference = new UserSharedPreference(this);
+
+
+        intent = getIntent();
+        if (intent != null) {
+            Number = intent.getStringExtra("number");
+            Log.e("keyyyy", Number );
+
+
+        }
+
+
 
         printHashKey();
 
@@ -237,11 +255,6 @@ public class SocialMediaLoginn extends AppCompatActivity  implements  GoogleApiC
             //Toast.makeText(getApplicationContext(), "" + id, Toast.LENGTH_SHORT).show();
 
             String socialMediaType = "Google";
-
-
-
-
-
             sharedPreference.setSocialMediaId(id);
             sharedPreference.setUserEmail(email);
             sharedPreference.setSocialMediaType(socialMediaType);
@@ -249,12 +262,17 @@ public class SocialMediaLoginn extends AppCompatActivity  implements  GoogleApiC
             sharedPreference.setProfilePic(personPhotoUrl);
             sharedPreference.setSignFlag(2);
 
+            SignUpBody signUpBody = new SignUpBody(personName,email,Number,"Password");
+
+            presenter.NewUserSignUp(SocialMediaLoginn.this ,signUpBody);
 
            /* Intent intent = new Intent(getApplicationContext(), PersonalDetailsActivity.class);
             startActivity(intent);
             finish();*/
 
-            new SendingContactDetails().execute();
+
+
+        //    new SendingContactDetails().execute();
 
 
           /*  Toast.makeText(getApplicationContext(), "Name: " + personName + ", email: " + email
@@ -448,7 +466,7 @@ public class SocialMediaLoginn extends AppCompatActivity  implements  GoogleApiC
             }
         }
 
-        Toast.makeText(this, "--" + contactLists.size(), Toast.LENGTH_SHORT).show();
+      //  Toast.makeText(this, "--" + contactLists.size(), Toast.LENGTH_SHORT).show();
         //  progressBar.dismiss();
         return ret;
     }
@@ -541,6 +559,76 @@ public class SocialMediaLoginn extends AppCompatActivity  implements  GoogleApiC
         cursor.close();
 
         return ret;
+    }
+
+    @Override
+    public void onNewUserSignUpError(String message) {
+        Sneaker.with(this)
+                .setTitle(message)
+                .setMessage("")
+                .sneakError();
+    }
+
+    @Override
+    public void onNewUserSignUpSuccess(ResponseBody responseBody, String message) {
+
+        String response=null,status = null,msg = null;
+        JSONObject jsonObject ;
+
+        if (message.equalsIgnoreCase("ok")) {
+
+            try {
+                response = responseBody.string();
+                 jsonObject = new JSONObject(response);
+                status = jsonObject.getString("status");
+                msg = jsonObject.getString("msg");
+
+                if (status.equalsIgnoreCase("true")) {
+
+                    JSONObject jsonObject1=jsonObject.getJSONObject("response");
+                    sharedPreference.setUserId(jsonObject1.getString("user_id"));
+                  //  Toast.makeText(SocialMediaLoginn.this, jsonObject1.getString("user_id") + "", Toast.LENGTH_SHORT).show();
+                    Intent intent = new Intent(getApplicationContext(), UserProfile.class);
+                    startActivity(intent);
+                    finish();
+
+
+
+
+
+                } else {
+                    Sneaker.with(this)
+                            .setTitle(msg)
+                            .setMessage("")
+                            .sneakError();
+
+                }
+            } catch (IOException | JSONException e) {
+                e.printStackTrace();
+            }
+
+
+        }
+    }
+
+    @Override
+    public void showHideProgress(boolean isShow) {
+        if (isShow) {
+            AppTools.showRequestDialog(this);
+
+
+        } else {
+            AppTools.hideDialog();
+
+        }
+    }
+
+    @Override
+    public void onNewUserSignUpFailure(Throwable t) {
+        Sneaker.with(this)
+                .setTitle(t.getLocalizedMessage())
+                .setMessage("")
+                .sneakError();
     }
 
 

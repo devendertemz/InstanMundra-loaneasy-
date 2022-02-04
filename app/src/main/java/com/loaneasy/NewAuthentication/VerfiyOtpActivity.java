@@ -173,14 +173,14 @@ public class VerfiyOtpActivity extends AppCompatActivity implements OTPVerifiyPr
 //                        Toast.makeText(VerfiyOtpActivity.this, response.getMsg() + "", Toast.LENGTH_SHORT).show();
 
 
-                        Intent in = new Intent(VerfiyOtpActivity.this, SocialMediaLoginn.class);
+                     /*   Intent in = new Intent(VerfiyOtpActivity.this, SocialMediaLoginn.class);
                         startActivity(in);
                         finish();
+*/
 
-
-                      /*  Intent in = new Intent(VerfiyOtpActivity.this, UserProfile.class);
+                        Intent in = new Intent(VerfiyOtpActivity.this, UserProfile.class);
                         startActivity(in);
-                        finish();*/
+                        finish();
                     }
 
 
@@ -239,6 +239,8 @@ public class VerfiyOtpActivity extends AppCompatActivity implements OTPVerifiyPr
 
                     if (key.equalsIgnoreCase("Signupp")) {
                         Intent in = new Intent(VerfiyOtpActivity.this, SocialMediaLoginn.class);
+
+                        in.putExtra("number", Number);
                         startActivity(in);
                         finish();
 

@@ -22,6 +22,8 @@ import com.android.volley.VolleyError;
 import com.android.volley.VolleyLog;
 import com.android.volley.toolbox.JsonObjectRequest;
 import com.android.volley.toolbox.Volley;
+import com.loaneasy.NewAuthentication.ForgetPasswordActivity;
+import com.loaneasy.NewAuthentication.VerfiyOtpActivity;
 import com.loaneasy.R;
 import com.loaneasy.RegisterMandate;
 import com.loaneasy.utils.UserSharedPreference;
@@ -334,7 +336,17 @@ public class LoanStatus extends Fragment implements View.OnClickListener {
         {
             case R.id.btENash:
 
-                startActivity(new Intent(getContext(), RegisterMandate.class));
+
+               // startActivity(new Intent(getContext(), RegisterMandate.class));
+
+
+
+                Intent in = new Intent(getContext(), RegisterMandate.class);
+                in.putExtra("orderId", orderId);
+
+
+                startActivity(in);
+
                 break;
         }
     }
